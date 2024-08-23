@@ -1,23 +1,69 @@
-import logo from './logo.svg';
+import { useEffect, useState } from "react";
+import Intro from "./components/Intro/Intro";
+import LandPage from "./components/LandingPage/LandPage";
+import Services from "./components/Services/Services";
+import { ThemeProvider } from './ThemeContext';
+import { Routes, Route } from 'react-router-dom';
+import Calculator from "./components/Calculator/Calculator";
+import AboutPage from "./components/AboutPage/AboutPage";
+import FAQ from "./components/FAQ/Faq";
 import './App.css';
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Login from "./components/Login/Login";
 
 function App() {
+  const [introComplete, setIntroComplete] = useState(false);
+
+  useEffect(() => {
+    const hasSeenIntro = localStorage.getItem('hasSeenIntro');
+    if (hasSeenIntro) {
+      setIntroComplete(true);
+    } else {
+      setTimeout(() => {
+        setIntroComplete(true);
+        localStorage.setItem('hasSeenIntro', 'true');
+      }, 7000);
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ThemeProvider>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {introComplete ? (
+                  <>
+                    {/* <Navbar/> */}
+                    <LandPage/>
+                    <Services/>
+                    <Calculator/>
+                    <AboutPage/>
+                    <FAQ/>
+                    <Contact/>
+                    <Footer/>
+                  </>
+                ) : (
+                  <>
+                    {!introComplete && <Intro />}
+                  </>
+                )}
+              </>
+            }
+          />
+          <Route
+            path="/signup"
+            element={<Login/>}
+          />
+          <Route
+            path="/signin"
+            element={<Login/>}
+          />
+        </Routes>
+      </ThemeProvider>
     </div>
   );
 }

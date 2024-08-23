@@ -1,0 +1,125 @@
+.intro-section{
+    background-color: var(--background-color_w);
+    height: 97vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.IntroContainer{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.intro-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro-content h1{
+    color: var(--color);
+    font-family: Poppins,sans-serif;
+    font-size: 4rem;
+    line-height: 1.4;
+    overflow: hidden;
+    background-color: var(--background-color_w);
+    margin-top: 2rem;
+
+}
+.intro-content h1 span{
+    color: var(--color);
+    font-family: Poppins,sans-serif;
+    font-size: 4rem;
+    line-height: 1.4;
+    transform: translateY(100%);
+    animation: text-animation 1.25s ease forwards 4.1s;
+    display: inline-block;
+}
+
+.intro-bar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--background-color_g); */
+    z-index: 2;
+}
+
+#logo{
+    fill: transparent;
+    stroke-width: 0.75;
+    animation: file 1s ease forwards 3.1s;
+}
+#logo path:nth-child(1){
+    stroke-dasharray: 29.9438533782959px;
+    stroke-dashoffset: 29.9438533782959px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 88.92008209228516px;   
+    stroke-dashoffset: 88.92008209228516px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 385.8758850097656px;  
+    stroke-dashoffset: 385.8758850097656px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 189.17132568359375px;  
+    stroke-dashoffset: 189.17132568359375px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 127.477783203125px;  
+    stroke-dashoffset: 127.477783203125px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 273.21661376953125px;  
+    stroke-dashoffset: 273.21661376953125px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 78.10133361816406px;  
+    stroke-dashoffset: 78.10133361816406px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 69.56083679199219px;  
+    stroke-dashoffset: 69.56083679199219px;
+    animation: line-animation 3s ease forwards;
+    stroke: var(--color);
+}
+@keyframes line-animation {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes file {
+    0%{
+        fill: transparent;
+    }
+    100%{
+        fill: var(--color);
+        stroke-width: 0;
+
+    }
+}
+@keyframes text-animation {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}

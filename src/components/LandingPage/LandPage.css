@@ -1,0 +1,219 @@
+.home{
+    background-color: var(--background-color_w);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    scroll-snap-type: mandatory;
+}
+.container{
+    padding: 150px 4rem 25px 4rem;
+    margin: 0 auto;
+    max-width: 107rem;
+}
+.hero-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10rem; */
+    padding-bottom: 100px;
+}
+.hero-main .hero-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    position: relative;
+    animation: visibility 1s;
+}
+.hero-main .hero-text h1{
+    color: var(--color);
+    font-size: 5.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.hero-main .hero-text p{
+    color: var(--land_p);
+    font-family: 'Mulish',sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 92%;
+}
+.hero-main .hero-text span{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 2.5rem 0;
+}
+.hero-main .hero-text span a {
+    display: flex;
+    align-items: center;
+    color: var(--color);
+    transition: all .2s;
+    font-size: 1.6rem;
+    padding: 8px 18px;
+    border-radius: 50px;
+    gap: 1rem;
+    text-decoration: none;
+}
+.hero-main .hero-text span a:nth-child(1) {
+    background-color: #30ca59;
+    border: 1px solid #30ca59;
+}
+.hero-main .hero-text span a:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid var(--color);
+}
+.hero-analis{
+    display: flex;
+    gap: 8rem;
+}
+.hero-analis-st{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.hero-analis-st .cl1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+.hero-analis-st .cl1 svg{
+    stroke: var(--background-color_g);
+}
+.hero-analis-st .cl2 span:nth-child(1){
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 0px;
+    color: var(--color);
+}
+.hero-analis-st .cl2 span:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 0px;
+    color: var(--color);
+}
+.hero-analis-sd{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.hero-analis-sd .cl1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+.hero-analis-sd .cl1 svg{
+    stroke: var(--background-color_g);
+}
+.hero-analis-sd .cl2 span:nth-child(1){
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 0px;
+    color: var(--color);
+}
+.hero-analis-sd .cl2 span:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 0px;
+    color: var(--color);
+}
+.hero-main .hero-img{
+    background-image: url(../Images/Hydrogen-Fuel.JPG);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    border-radius: 25px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 40rem;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 60px -15px rgba(0, 0, 0, 0.4);
+}
+.hero-img-st-row{
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-main .hero-img .hero-img-banner{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9c9;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:35%;
+    margin: 5px;
+    padding: 15px 12px;
+    gap: 0.75rem;
+}
+.hero-img-banner span svg{
+    background-color: rgb(24, 24, 24);
+    stroke: white;
+    border-radius: 3px;
+    padding: 4px;
+}
+.hero-img-banner span:nth-child(2){
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+.hero-img-banner span:nth-child(3){
+    font-weight: bolder;
+    line-height: 20px;
+    font-size: 2.1rem;
+}
+.hero-img-banner span:nth-child(4){
+    margin-top: 1rem;
+}
+.hero-img-banner span a{
+    font-size: 1.1rem;
+    padding: 4px 8px;
+    border-radius: 50px;
+    background-color: #30ca59;
+}
+.hero-img-sd-row{
+    position: absolute;
+    top: 66%;
+    left: 970.5px;
+    
+}
+.hero-img-sd-row img{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 45px 40px 0px rgba(0, 0, 0, 0.045);
+    background-color: #f9f9f916;
+    backdrop-filter: blur(.65rem);
+}
+@keyframes visibility {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
