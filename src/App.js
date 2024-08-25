@@ -11,6 +11,9 @@ import './App.css';
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
+import Sources from "./components/Sources/Sources";
+import Navbar from "./components/Navbar/Navbar";
+import Production from "./components/Production/Production";
 
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -61,6 +64,14 @@ function App() {
           <Route
             path="/signin"
             element={<Login/>}
+          />
+          <Route
+            path="/sources"
+            element={<><Navbar/><Sources/><Footer/></>}
+          />
+          <Route
+            path="/production"
+            element={<><Navbar/><Production/><Footer/></>}
           />
         </Routes>
       </ThemeProvider>
