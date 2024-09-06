@@ -31,6 +31,9 @@ export function SigninFormDemo() {
             <Input id="password" placeholder="••••••••" type={passwordType} />
           </LabelInputContainer>
         </div>
+        <div className="forgetPwd">
+          <Link to="/password_reset">Forgot password?</Link>
+        </div>
         <div className="signin-buttons">
           <button className="signin-button" type="submit">
             Sign In 

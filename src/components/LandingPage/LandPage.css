@@ -42,6 +42,7 @@
     font-weight: 500;
     line-height: 1.6;
     width: 92%;
+    text-align: justify;
 }
 .hero-main .hero-text span{
     cursor: pointer;

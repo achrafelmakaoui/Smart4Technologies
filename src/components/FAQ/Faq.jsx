@@ -10,43 +10,32 @@ import AnimatedHeading from '../../AnimatedHeading';
 const FaqAccordion = () => {
   const { theme, toggleTheme } = useTheme();
 
-  // State to track which FAQ item is open
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
-    if (openFaq === index) {
-      setOpenFaq(null);
-    } else {
-      setOpenFaq(index);
-    }
+    setOpenFaq(openFaq === index ? null : index);
   };
 
   const faqData = [
     {
-      question: 'What is Frontend Mentor, and how will it help me?',
-      answer: `Frontend Mentor offers realistic coding challenges to help developers improve their
-               frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-               all levels and ideal for portfolio building.`,
+      question: 'What are the main benefits of hydrogen as an energy source?',
+      answer: `Hydrogen is a clean and sustainable energy source that produces zero emissions when used, making it ideal for reducing carbon footprints and combating climate change.`,
     },
     {
-      question: 'Is Frontend Mentor free?',
-      answer: `Yes, Frontend Mentor offers both free and premium coding challenges, with the free
-               option providing access to a range of projects suitable for all skill levels.`,
+      question: 'How is hydrogen produced?',
+      answer: `Hydrogen can be produced through various methods, including electrolysis of water, natural gas reforming, and biomass gasification, with green hydrogen being the most environmentally friendly option.`,
     },
     {
-      question: 'Can I use Frontend Mentor projects in my portfolio?',
-      answer: `Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-               way to showcase your skills to potential employers!`,
+      question: 'What industries can benefit from hydrogen energy solutions?',
+      answer: `Hydrogen can power transportation, industrial processes, energy storage, and heating systems, making it versatile for industries like automotive, manufacturing, and utilities.`,
     },
     {
-      question: `How can I get help if I'm stuck on a Frontend Mentor challenge?`,
-      answer: `The best place to get help is inside Frontend Mentor's Discord community. There's a help
-               channel where you can ask questions and seek support from other community members.`,
+      question: `How safe is hydrogen for industrial and commercial use?`,
+      answer: `Hydrogen is as safe as other common fuels when handled properly, with strict safety protocols and advanced technologies in place to minimize risks.`,
     },
     {
-        question: `How can I get help if I'm stuck on a Frontend Mentor challenge?`,
-        answer: `The best place to get help is inside Frontend Mentor's Discord community. There's a help
-                 channel where you can ask questions and seek support from other community members.`,
+        question: `What role does hydrogen play in achieving global energy transition goals?`,
+        answer: `Hydrogen is critical in the global energy transition, offering a scalable solution for decarbonizing sectors that are difficult to electrify, such as heavy industry and long-haul transport.`,
     },
   ];
 
@@ -77,7 +66,8 @@ const FaqAccordion = () => {
                             </>
                         }
                     </h2>
-                    <p style={{ display: openFaq === index ? 'block' : 'none' }}>{item.answer}</p>
+                    <p className={openFaq === index ? 'open' : ''}>{item.answer}</p>
+                    {/* <p style={{ display: openFaq === index ? 'block' : 'none'}}>{item.answer}</p> */}
                     <hr />
                 </div>
             ))}

@@ -91,7 +91,7 @@
     justify-content: center;
     align-items: center;
     font-family: Mulish,sans-serif;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     cursor: pointer;
   }
   .signin-button-eye {
@@ -106,7 +106,7 @@
     justify-content: center;
     align-items: center;
     font-family: Mulish,sans-serif;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     cursor: pointer;
   }
   
@@ -163,4 +163,16 @@
     font-weight: 600;
     background-color: transparent;
     cursor: pointer;
+  }
+  .forgetPwd{
+    margin-top: 1.5rem;
+  }
+  .forgetPwd a{
+    color: var(--color);
+    font-family: Poppins,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+    text-decoration: none;
   }

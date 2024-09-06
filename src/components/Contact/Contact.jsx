@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './Contact.css'
-import ContactImg from '../Images/contact.jpg'
+import ContactImg from '../Images/contaact.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faEnvelopeOpen, faCircleUser, faEnvelopeOpenText,} from '@fortawesome/free-solid-svg-icons'
 // import emailjs from '@emailjs/browser';

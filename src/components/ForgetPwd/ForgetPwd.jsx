@@ -1,0 +1,61 @@
+import React, { useState } from "react";
+import "./ForgetPwd.css";
+import signUpLogo from '../Images/H2_hydrogen.png'
+import { Link } from "react-router-dom";
+export function ForgetPwd() {
+  const [passwordType, setPasswordType] = useState('password');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+  };
+  const togglePasswordVisibility = (e) => {
+    e.preventDefault();
+    setPasswordType(passwordType === 'password' ? 'text' : 'password');
+  }
+  return (
+    <div className="forgetpwd-container">
+      <img className="forgetpwd-img" src={signUpLogo} alt="signUpLogo"/>
+      <h2 className="forgetpwd-title">Reset your password</h2>
+      <form className="forgetpwd-form" onSubmit={handleSubmit}>
+        <p className="forgetpwd-subtitle">
+        Enter your user account's verified email address and we will send you a password reset link.
+        </p>
+        <div className="input-group">
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="email">Email Address</Label>
+            <Input placeholder="email@gmail.com" type="email" />
+          </LabelInputContainer>
+        </div>
+        <div className="forgetpwd-buttons">
+          <button className="forgetpwd-button" type="submit">
+            Send 
+            <BottomGradient />
+          </button>
+        </div>
+        <div className="divider" />
+      </form>
+    </div>
+  );
+}
+
+const BottomGradient = () => {
+  return (
+    <>
+      <span className="bottom-gradient" />
+      <span className="bottom-gradient-blur" />
+    </>
+  );
+};
+
+const LabelInputContainer = ({ children, className }) => {
+  return <div className={`label-input-container ${className}`}>{children}</div>;
+};
+
+const Label = ({ htmlFor, children }) => {
+  return <label htmlFor={htmlFor} className="label">{children}</label>;
+};
+
+const Input = React.forwardRef(({ type, ...props }, ref) => {
+  return <input type={type} className="input" ref={ref} {...props} />;
+});

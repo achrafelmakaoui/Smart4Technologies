@@ -5,6 +5,7 @@ import Sol from '../Images/solution.png'
 import Support from '../Images/phonee.png'
 import Hydrogen from '../Images/Hydrogeen.png'
 import AnimatedHeading from '../../AnimatedHeading';
+import { Link } from 'react-router-dom';
 
 
 const Services = () => {
@@ -56,12 +57,12 @@ const Services = () => {
               </div>
             </div>
             <div className='pro__items'>
-              <span>Get Started
+              <Link to='/HydrogenSolutions'>Get Started
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
-              </span>
+              </Link>
             </div>
           </div>
           <div class="card">
@@ -79,12 +80,12 @@ const Services = () => {
               </div>
             </div>
             <div className='pro__items'>
-              <span>Get Started
+              <Link to="/EngineeringSolutions">Get Started
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
-              </span>
+              </Link>
             </div>
           </div>
           <div class="card">
@@ -102,12 +103,12 @@ const Services = () => {
               </div>
             </div>
             <div className='pro__items'>
-              <span>Get Started
+              <Link to="/ITSolutions">Get Started
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
-              </span>
+              </Link>
             </div>
           </div>
           <div class="card">
@@ -125,12 +126,12 @@ const Services = () => {
               </div>
             </div>
             <div className='pro__items'>
-              <span>Get Started
+              <a href="/#Contact">Get Started
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
-              </span>
+              </a>
             </div>
           </div>
         </div>

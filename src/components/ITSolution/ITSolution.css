@@ -1,0 +1,197 @@
+.ITsolution-section {
+    display: block;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--background-color_w);
+}
+.ITsolutionContainer{
+    margin: 0 auto;
+    padding: 120px 4rem 25px 4rem;
+    max-width: 107rem;
+}
+.ITsolution-content h3{
+    color: #30ca59;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.ITsolution-content h4 {
+    color: var(--color);
+    font-family: Poppins,sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+}
+.ITServ-v1{
+    /* margin-top: 8rem; */
+}
+.ITServ-v1 h2{
+    color: #30ca59;
+    font-size: 3.5rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-style: oblique;
+}
+.ITServ-v1 h4 {
+    color: gray;
+    font-family: 'Mulish',sans-serif;
+    font-size: 1.65rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.ITServ-Item1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.ITServ-Col1{
+    display: grid;
+    /* flex-direction: column; */
+    gap: 4rem;
+    width: 50%;
+}
+.ITServ-v2{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+.ITServ-Col1 .ITServ-Col1Img1.collapsed{
+    width: 20%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(100%); */
+}
+.ITServ-Col1 .ITServ-Col1Img2.collapsed{
+    width: 20%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(100%); */
+}
+.ITServ-Col1 .ITServ-Col1Img3.collapsed{
+    width: 20%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(100%); */
+}
+.ITServ-Col1 .ITServ-Col1Img4.collapsed{
+    width: 20%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(100%); */
+}
+.ITServ-Col1 .ITServ-Col1Img5.collapsed{
+    width: 20%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(100%); */
+}
+.ITServ-Col1 .ITServ-Col1Img1.expanded{
+    width: 80%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(0%); */
+}
+.ITServ-Col1 .ITServ-Col1Img2.expanded{
+    width: 80%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(0%); */
+}
+.ITServ-Col1 .ITServ-Col1Img3.expanded{
+    width: 80%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(0%); */
+}
+.ITServ-Col1 .ITServ-Col1Img4.expanded{
+    width: 80%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(0%); */
+}
+.ITServ-Col1 .ITServ-Col1Img5.expanded{
+    width: 80%;
+    z-index: 999;
+    transition: width 0.3s ease-in-out;
+    /* filter: grayscale(0%); */
+}
+
+.ITServ-Col1 .HydroSol1{
+    width: 100%;
+    height: 25.75rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.ITServ-Col1 .HydroSol2{
+    width: 100%;
+    height: 25.75rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.ITServ-Col1 .HydroSol3{
+    width: 100%;
+    height: 25.75rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.ITServ-Col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+.ITServ-Col2Text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 8rem;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 0rem 2rem;
+    border-radius: 0.75rem;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.ITServ-Col2Text.active{
+    border: 1px solid #30ca59;
+    box-shadow: 0px 5px 10px 3px #30ca5912;
+}
+.ITServ-Col2Text span:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #30ca59;
+}
+.ITServ-Col2Text span:nth-child(2){
+    color: var(--color);
+    font-family: 'Mulish',sans-serif;
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.ITSolutions-Tit{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    width: 100%;
+}
+.ITSolutions-Tit h1{
+    font-size: 6rem;
+    color: #30ca59;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: right;
+    width: 50%;
+}
+.ITSolutions-Tit .ITSolutions-hr{
+    border: 1px solid #30ca59;
+    width: 50%;
+}

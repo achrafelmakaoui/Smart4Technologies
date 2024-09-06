@@ -34,11 +34,11 @@ nav{
     width: 100%;
     z-index: 999;
     /* box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px; */
-    /* background-color: var(--background-color_g);
-    border: 1px solid transparent;
-    backdrop-filter: blur(.5rem); */
+    /* background-color: rgba(16, 16, 16, 0.575); */
+    /* border: 1px solid transparent; */
+    /* backdrop-filter: blur(.5rem); */
     /* box-shadow: 0rem 0rem 1.3rem rgba(0, 0, 0, 0.3); */
-    flex: 3;
+    /* flex: 3; */
 }
 nav .navLogo{
     display: flex;

@@ -4,7 +4,7 @@ section {
 }
 .about{
     background-color: var(--background-color_w);
-    /* padding: 7rem 0; */
+    padding: 5rem 0;
 }
 .AboutContainer{
     margin: 0 auto;

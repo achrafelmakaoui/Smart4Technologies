@@ -39,13 +39,13 @@
     height: 25rem;
     width: 35rem;
     object-fit: contain;
-    filter: brightness(105%);
+    /* filter: brightness(105%); */
     filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.148));
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt .Grelectrolysis:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .production-textFt{
     display: flex;
@@ -72,11 +72,11 @@
     height: 23rem;
     width: 25rem;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt2 .Grelectrolysis2:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .production-textFt2 P{
     color: gray;
@@ -93,7 +93,7 @@
     font-weight: 700;
     font-style: oblique;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .production-imgFt3{
     display: flex;
@@ -105,11 +105,11 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt3 .ectrolysis1:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .production-imgFt4{
     display: flex;
@@ -121,11 +121,11 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt4 .ectrolysis2:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .production-imgFt5{
     display: flex;
@@ -137,21 +137,21 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt5 .ectrolysis3:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .production-imgFt5 .ectrolysis4 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt5 .ectrolysis4:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .production-textFt2 h2{
     font-size: 3rem;
@@ -177,9 +177,9 @@
     height: 22rem;
     width: 25rem;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .production-imgFt2 .Pemectrolysis:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }

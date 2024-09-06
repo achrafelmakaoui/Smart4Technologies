@@ -39,13 +39,13 @@
     height: 25rem;
     width: 35rem;
     object-fit: contain;
-    filter: brightness(105%);
+    /* filter: brightness(105%); */
     filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.148));
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt .GrH2:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .sources-textFt{
     display: flex;
@@ -72,11 +72,11 @@
     height: 35rem;
     width: 25rem;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt2 .GrDef:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .sources-textFt2 P{
     color: gray;
@@ -93,7 +93,7 @@
     font-weight: 700;
     font-style: oblique;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .sources-imgFt3{
     display: flex;
@@ -105,11 +105,11 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt3 .Method1:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .sources-imgFt4{
     display: flex;
@@ -121,11 +121,11 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt4 .Method2:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .sources-imgFt5{
     display: flex;
@@ -137,11 +137,11 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt5 .Method3:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .greyHydro-table{
     width: 100%;
@@ -151,11 +151,11 @@
     border: none;
     margin-top: 3rem;
     border: 1px solid #30ca59;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .greyHydro-table:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .trHead th{
     background-color: #30ca59;
@@ -197,11 +197,11 @@
     height: 30rem;
     width: 25rem;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt2 .BlH2:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .sectionBlue{
     font-size: 2rem;
@@ -238,11 +238,11 @@
     height: 35rem;
     width: 25rem;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
 .sources-imgFt2 .GreenH2:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .sectionRef{
     font-size: 2rem;
