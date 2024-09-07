@@ -3,6 +3,7 @@ import './Footer.css'
 import AdbLogo from '../Images/S4TB.png'
 import AdbWLogo from '../Images/S4TW.png'
 import { useTheme } from '../../ThemeContext';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { theme, toggleTheme } = useTheme();
@@ -10,7 +11,6 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-        
         <div className="footer-container">
             <hr className='footrt-hr'/>
             <div className="footer-content">
@@ -21,18 +21,18 @@ const Footer = () => {
                 <div className="footer-col2">
                     <h4>Useful links</h4>
                     <ul>
-                        <li><a href='/#Home' className='link'>Home</a></li>
-                        <li><a href='/#Services' className='link'>Service</a></li>
-                        <li><a href='/#Calculator' className='link'>Calculator</a></li>
-                        <li><a href='/#Contact' className='link'>Contact</a></li>
+                        <li><Link to='/#Home' className='link'>Home</Link></li>
+                        <li><Link to='/#Services' className='link'>Service</Link></li>
+                        <li><Link to='/#Calculator' className='link'>Calculator</Link></li>
+                        <li><Link to='/#Contact' className='link'>Contact</Link></li>
                     </ul>
                 </div>
                 <div className="footer-col3">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href='/#' className='link'>Term of use</a></li>
-                        <li><a href='/#' className='link'>Privacy policy</a></li>   
-                        <li><a href='/#About' className='link'>About Us</a></li>   
+                        <li><Link to='/TermsOfUse' className='link'>Term of use</Link></li>
+                        <li><Link to='/Privacy&Policy' className='link'>Privacy policy</Link></li>   
+                        <li><Link to='/#About' className='link'>About Us</Link></li> 
                     </ul>
                 </div>
                 <div className="footer-col4">

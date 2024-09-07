@@ -20,8 +20,10 @@ import HydroSolution from "./components/HydroSolution/HydroSolution";
 import ParticlesComponent from "./components/LandingPage/Particles";
 import EnginSolution from "./components/EnginSolution/EnginSolution";
 import ITSolution from "./components/ITSolution/ITSolution";
-import { ForgetPwd } from "./components/ForgetPwd/ForgetPwd";
 import Scrolltotop from "./Scrolltotop";
+import TermOfUse from "./components/TermOfUse/TermOfUse";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+import ScrollToSection from "./ScrollToSection";
 
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -41,6 +43,7 @@ function App() {
   return (
     <div>
       <ThemeProvider>
+        <ScrollToSection/>
         <Routes>
           <Route
             path="/"
@@ -78,6 +81,10 @@ function App() {
             element={<Login/>}
           />
           <Route
+            path="/password_resett"
+            element={<Login/>}
+          />
+          <Route
             path="/sources"
             element={<><Scrolltotop/><Navbar/><Sources/><Footer/></>}
           />
@@ -104,6 +111,14 @@ function App() {
           <Route
             path="/ITSolutions"
             element={<><Scrolltotop/><ParticlesComponent/><Navbar/><ITSolution/><Footer/></>}
+          />
+          <Route
+            path="/TermsOfUse"
+            element={<><Scrolltotop/><ParticlesComponent/><Navbar/><TermOfUse/><Footer/></>}
+          />
+          <Route
+            path="/Privacy&Policy"
+            element={<><Scrolltotop/><ParticlesComponent/><Navbar/><PrivacyPolicy/><Footer/></>}
           />
         </Routes>
       </ThemeProvider>

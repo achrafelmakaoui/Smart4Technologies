@@ -8,6 +8,7 @@ import { SigninFormDemo } from '../SigninForm/SigninForm'
 import { useLocation } from "react-router-dom";
 import { motion } from 'framer-motion';
 import { ForgetPwd } from '../ForgetPwd/ForgetPwd'
+import { ResetPwd } from '../ResetPwd/ResetPwd'
 
 const Login = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -107,6 +108,7 @@ const Login = () => {
                     {currentPage === 'signin' && <motion.div style={{width:'100%'}} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2, ease: [0, 0.71, 0.2, 1.01]}}><SigninFormDemo/></motion.div>}
                     {currentPage === 'signup' && <motion.div style={{width:'100%'}} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2, ease: [0, 0.71, 0.2, 1.01]}}><SignupFormDemo/></motion.div>}
                     {currentPage === 'password_reset' && <motion.div style={{width:'100%'}} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2, ease: [0, 0.71, 0.2, 1.01]}}><ForgetPwd/></motion.div>}
+                    {currentPage === 'password_resett' && <motion.div style={{width:'100%'}} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2, ease: [0, 0.71, 0.2, 1.01]}}><ResetPwd/></motion.div>}
                 </div>
             </div>
         </div>
