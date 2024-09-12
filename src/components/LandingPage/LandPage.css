@@ -135,7 +135,7 @@
     color: var(--color);
 }
 .hero-main .hero-img{
-    background-image: url(../Images/Hydrogen-Fuel.JPG);
+    background-image: url(../Images/hero2.jpeg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,7 +157,7 @@
 .hero-main .hero-img .hero-img-banner{
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9c9;
+    background-color: #f9f9f9a4;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
