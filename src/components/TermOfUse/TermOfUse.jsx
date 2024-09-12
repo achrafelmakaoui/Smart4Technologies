@@ -1,34 +1,22 @@
 import React, { useEffect, useRef } from 'react'
 import './TermOfUse.css'
-import { gsap, Power2, Back } from 'gsap';
-import SplitText from "gsap-trial/SplitText"
+import { gsap, Power2 } from 'gsap';
 
 const TermOfUse = () => {
     const TextAnimation = useRef();
     const paraghAnimation = useRef();
     const paraghAnimation2 = useRef();
-    gsap.registerPlugin(SplitText);
 
     useEffect(() => {
         const tl = gsap.timeline();
 
-        const splitText = new SplitText(TextAnimation.current, { type: 'lines,chars', linesClass: 'line', charsClass: 'char' });
-
-        tl.staggerFromTo(
-            splitText.lines,
-            1.5,
-            { yPercent: 130, ease: Back.easeOut },
-            { yPercent: 0, ease: Back.easeOut },
-            0.5
-        );
-    
-        tl.staggerFromTo(
-            splitText.chars,
-            0.5,
-            { opacity: 0, y: 50, ease: Power2.easeInOut },
-            { opacity: 1, y: 0, ease: Power2.easeInOut },
+        tl.fromTo(
+            TextAnimation.current,
+            0.8,
+            { opacity: 0, yPercent: 30, ease: Power2.easeInOut },
+            { opacity: 1, yPercent: 0, ease: Power2.easeInOut },
             0.02,
-            '-=1.5'
+            '-=1.2'
         );
 
         tl.fromTo(
@@ -36,14 +24,14 @@ const TermOfUse = () => {
             0.8,
             { yPercent: 130, opacity: 0, stagger: 0.02, ease: Power2.easeInOut },
             { yPercent: 0, opacity: 1, stagger: 0.02, ease: Power2.easeInOut },
-            '-=1.2'
+            '-=0.8'
         );
         tl.fromTo(
             paraghAnimation2.current,
             0.8,
             { yPercent: 130, opacity: 0, stagger: 0.02, ease: Power2.easeInOut },
             { yPercent: 0, opacity: 1, stagger: 0.02, ease: Power2.easeInOut },
-            '-=1'
+            '-=0.6'
         );
     }, []);
 

@@ -22,7 +22,7 @@
 .intro-content h1{
     color: var(--color);
     font-family: Poppins,sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.4;
     overflow: hidden;
     background-color: var(--background-color_w);
@@ -32,7 +32,7 @@
 .intro-content h1 span{
     color: var(--color);
     font-family: Poppins,sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.4;
     transform: translateY(100%);
     animation: text-animation 1.25s ease forwards 4.1s;

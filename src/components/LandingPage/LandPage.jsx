@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './LandPage.css'
 import Navbar from '../Navbar/Navbar'
-import { gsap, Power2, Back } from 'gsap';
-import SplitText from "gsap-trial/SplitText"
+import { gsap, Power2 } from 'gsap';
 import Hydrogen from '../Images/HYDROGENT.png'
 import ParticlesComponent from './Particles';
 import { Link } from 'react-router-dom';
@@ -14,29 +13,18 @@ const LandPage = () => {
     const paraghAnimation = useRef();
     const iconsAnimation = useRef();
     const iconsAnimation2 = useRef();
-    gsap.registerPlugin(SplitText);
+
+
     useEffect(() => {
         const tl = gsap.timeline();
-    
-        // Use SplitText to split the text
-        const splitText = new SplitText(TextAnimation.current, { type: 'lines,chars', linesClass: 'line', charsClass: 'char' });
-    
-        // Text Animation
-        tl.staggerFromTo(
-            splitText.lines,
-            1.2,
-            { yPercent: 130, ease: Back.easeOut },
-            { yPercent: 0, ease: Back.easeOut },
-            0.2
-        );
-    
-        tl.staggerFromTo(
-            splitText.chars,
-            0.6,
-            { opacity: 0, y: 20, ease: Power2.easeInOut },
-            { opacity: 1, y: 0, ease: Power2.easeInOut },
+ 
+        tl.fromTo(
+            TextAnimation.current,
+            1,
+            { opacity: 0, yPercent: 20, ease: Power2.easeInOut },
+            { opacity: 1, yPercent: 0, ease: Power2.easeInOut },
             0.02,
-            '-=1.2'
+            '-=1'
         );
     
         // Wave Animation with a delay after text animation
@@ -76,7 +64,7 @@ const LandPage = () => {
                     <p ref={paraghAnimation}>Smart4Technologies delivers cutting-edge software for planning, modeling, and enhancing hydrogen system value chains globally. Utilizing reliable data from diverse energy inputs and renewable sources, our solution is tailored for academic experts, consultants, business strategists, project developers, and engineers.</p>
                     <span ref={iconsAnimation}>
                         <Link to='/signin'>Get started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></Link>
-                        <a>See Demo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></a>
+                        <Link>See Demo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></Link>
                     </span>
                     <div className='hero-analis' ref={iconsAnimation2}>
                         <div className='hero-analis-st'>
@@ -117,7 +105,7 @@ const LandPage = () => {
                             </span>
                             <span>Total Balance</span>
                             <span>$435,15</span>
-                            <span><a>+8,86%</a></span>
+                            <span><a href='/#'>+8,86%</a></span>
                         </div>
                     </div>
                 </div>

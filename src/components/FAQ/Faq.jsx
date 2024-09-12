@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Faq.css'; // Assuming you keep the CSS in a separate file
+import './Faq.css';
 import ChevronUpW from '../Assets/chevron-up.svg'
 import ChevronDownW from '../Assets/chevron-down.svg'
 import ChevronUpB from '../Assets/chevron-up-dark.svg'
@@ -8,7 +8,7 @@ import { useTheme } from '../../ThemeContext';
 import AnimatedHeading from '../../AnimatedHeading';
 
 const FaqAccordion = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   const [openFaq, setOpenFaq] = useState(null);
 
