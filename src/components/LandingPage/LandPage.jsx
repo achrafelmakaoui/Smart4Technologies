@@ -55,7 +55,6 @@ const LandPage = () => {
 
   return (
     <section className="home" id="Home">
-        <Navbar/>
         <ParticlesComponent/>
         <div className='container'>
             <div className='hero-main'>
@@ -105,12 +104,20 @@ const LandPage = () => {
                             </span>
                             <span>Total Balance</span>
                             <span>$435,15</span>
-                            <span><a href='/#'>+8,86%</a></span>
+                            <span><a>+8,86%</a></span>
                         </div>
                     </div>
-                </div>
-                <div className='hero-img-sd-row' ref={Img2Animation}>
-                    <img src={Hydrogen} alt='Hedrogen'/>
+                    <div class="hero-img-sd-row" ref={Img2Animation}>
+                        <div class="ratingText">
+                            <span>AVERAGE RATING OF ALL THE PROJECTS WE HAVE WORKED ON</span>
+                        </div>
+                        <div class="ratingPoint">
+                            <span>4.8</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFD700" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

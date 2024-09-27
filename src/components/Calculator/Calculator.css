@@ -1,7 +1,7 @@
 
 .Calculator-cards {
     background-color: var(--background-color_w);
-    height: 100vh;
+    height: fit-content;
     width: 100%;
   }
   .calcul-content{
@@ -197,55 +197,57 @@
   /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
   
   @media(max-width: 1000px) {
-    .Calculator-cards {
-      align-items: flex-start;  
-      overflow: auto;
-    }
-    
-    #cardsCalculator {    
-      max-width: 1000px;
-      padding: 10px 0px;
-    }
-    
     .cardCalculator {
-      flex-shrink: 1;
-      width: calc(50% - 4px);
+      width: 49%;
     }
   }
-  
-  @media(max-width: 500px) {
-    .cardCalculator {
-      height: 180px;
-    }
-    
-    .cardCalculator-image {
-      height: 80px;  
-    }
-    
-    .cardCalculator-image > i {
-      font-size: 3em;
-    }
-      
-    .cardCalculator-info-wrapper {
-      padding: 0px 10px;
-    }
-    
-    .cardCalculator-info > i { 
-      font-size: 0.8em; 
-    }
-    
-    .cardCalculator-info-title > h3 {
-      font-size: 0.9em;
-    }
-  
-    .cardCalculator-info-title > h4 {
-      font-size: 0.8em;
-      margin-top: 4px;
+  @media(max-width: 966px) {
+    .Calculator-cardsh4{
+      font-size: 2rem;
     }
   }
-  
-  @media(max-width: 320px) {
+  @media(max-width: 571px) {
+    .Calculator-cardsh4{
+      font-size: 2.25rem;
+    }
+  }
+  @media(max-width: 532px) {
+    .Calculator-cardsh4{
+      font-size: 2rem;
+    }
+  }
+  @media(max-width: 472px) {
+    .Calculator-cardsh4{
+      font-size: 1.75rem;
+    }
+  }
+  @media(max-width: 422px) {
+    .Calculator-cardsh4{
+      font-size: 1.5rem;
+    }
+  }
+  @media(max-width: 600px) {
     .cardCalculator {
       width: 100%;
+    }
+  }
+  @media(max-width: 374px) {
+    .Calculator-cardsh4{
+      font-size: 1.25rem;
+    }
+  }
+  @media(max-width: 366px) {
+    .Calculator-cardsh4{
+      font-size: 1rem;
+    }
+  }
+  @media(max-width: 328px) {
+    .Calculator-cardsh4{
+      font-size: 1rem;
+    }
+  }
+  @media(max-width: 334px) {
+    .Calculator-cardsh4{
+      font-size: 1rem;
     }
   }

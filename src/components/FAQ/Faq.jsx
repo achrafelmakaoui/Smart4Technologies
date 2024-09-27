@@ -18,24 +18,28 @@ const FaqAccordion = () => {
 
   const faqData = [
     {
-      question: 'What are the main benefits of hydrogen as an energy source?',
-      answer: `Hydrogen is a clean and sustainable energy source that produces zero emissions when used, making it ideal for reducing carbon footprints and combating climate change.`,
+      question: 'What is the hydrogen value chain?',
+      answer: `The hydrogen value chain refers to the entire process of producing, storing, transporting, and utilizing hydrogen. It encompasses various stages, from hydrogen production to its final application.`,
     },
     {
       question: 'How is hydrogen produced?',
-      answer: `Hydrogen can be produced through various methods, including electrolysis of water, natural gas reforming, and biomass gasification, with green hydrogen being the most environmentally friendly option.`,
+      answer: `Electrolysis: Using renewable energy sources to split water into hydrogen and oxygen. Reforming: Converting hydrocarbons like natural gas or biomass into hydrogen and carbon dioxide. Steam Methane Reforming (SMR): A common reforming method involving reacting methane with steam. Other methods: Gasification, water-gas shift reaction, and biological production.`,
     },
     {
-      question: 'What industries can benefit from hydrogen energy solutions?',
-      answer: `Hydrogen can power transportation, industrial processes, energy storage, and heating systems, making it versatile for industries like automotive, manufacturing, and utilities.`,
+      question: 'What are the different types of hydrogen?',
+      answer: `Grey hydrogen: Produced from fossil fuels, resulting in significant carbon emissions. Blue hydrogen: Produced from fossil fuels but with carbon capture and storage (CCS) to reduce emissions. Green hydrogen: Produced from renewable energy sources through electrolysis, resulting in zero carbon emissions.`,
     },
     {
-      question: `How safe is hydrogen for industrial and commercial use?`,
-      answer: `Hydrogen is as safe as other common fuels when handled properly, with strict safety protocols and advanced technologies in place to minimize risks.`,
+      question: `What are the challenges in hydrogen production?`,
+      answer: `Cost: The cost of renewable energy sources and electrolysis equipment can be high. Efficiency: The efficiency of hydrogen production processes can vary. Infrastructure: Developing the necessary infrastructure for hydrogen production, storage, and transportation requires significant investment.`,
     },
     {
-        question: `What role does hydrogen play in achieving global energy transition goals?`,
-        answer: `Hydrogen is critical in the global energy transition, offering a scalable solution for decarbonizing sectors that are difficult to electrify, such as heavy industry and long-haul transport.`,
+        question: `How is hydrogen stored and transported?`,
+        answer: `Storage: Hydrogen can be stored as a gas, liquid, or in solid materials like metal hydrides. Transportation: Hydrogen can be transported via pipelines, trucks, or as a compressed gas or liquid in specialized containers.`,
+    },
+    {
+      question: `What are the potential applications of hydrogen?`,
+      answer: `Energy generation: Fuel cells, gas turbines, and combined cycle power plants. Transportation: Fuel cell vehicles, hydrogen-powered aircraft and ships. Industrial processes: Steelmaking, ammonia production, and refining. Heating and cooking: Hydrogen can be used for residential and commercial heating.`,
     },
   ];
 

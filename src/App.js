@@ -51,13 +51,13 @@ function App() {
               <>
                 {introComplete ? (
                   <>
-                    {/* <Navbar/> */}
+                    <Navbar/>
                     <LandPage/>
                     <Services/>
                     <Calculator/>
-                    <AboutPage/>
+                    {/* <AboutPage/> */}
                     <FAQ/>
-                    <Contact/>
+                    {/* <Contact/> */}
                     <Footer/>
                   </>
                 ) : (
