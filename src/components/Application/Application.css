@@ -1,7 +1,6 @@
 .application-section {
     display: block;
     width: 100%;
-    /* height: 100vh; */
     background-color: var(--background-color_w);
 }
 .applicationContainer{
@@ -31,6 +30,14 @@
     column-gap: 2rem;
     margin-top: 5rem;
 }
+.application-contentheader {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 5rem;
+}
 .application-imgFt {
     position: relative;
 }
@@ -39,13 +46,8 @@
     height: 25rem;
     width: 35rem;
     object-fit: contain;
-    /* filter: brightness(105%); */
     filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.148));
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt .hydroapplication:hover{
-    /* filter: grayscale(0%); */
 }
 .application-textFt{
     display: flex;
@@ -72,11 +74,7 @@
     height: 30rem;
     width: 27rem;
     object-fit: cover;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt2 .AppHydro:hover{
-    /* filter: grayscale(0%); */
 }
 .application-textFt2 P{
     color: gray;
@@ -105,79 +103,200 @@
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap1:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap2 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap2:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap3 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap3:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap4 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap4:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap5 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap5:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap6 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap6:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap7 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
-}
-.application-imgFt5 .Ap7:hover{
-    /* filter: grayscale(0%); */
 }
 .application-imgFt5 .Ap8 {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
-    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
 }
-.application-imgFt5 .Ap8:hover{
-    /* filter: grayscale(0%); */
+
+@media(max-width: 1039px) {
+    .application-textFt2 p{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 944px) {
+    .application-textFt2 p{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 821px) {
+    .application-textFt2 p{
+        font-size: 1.25rem;
+    }
+}
+@media(max-width: 765px) {
+    .application-textFt2 p{
+        font-size: 1.2rem;
+    }
+    .application-textFt h1{
+        font-size: 5rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 22rem;
+        width: 32rem;
+    }
+}
+@media(max-width: 736px) {
+    .application-textFt2 p{
+        font-size: 1.15rem;
+    }
+}
+@media(max-width: 675px) {
+    .application-textFt2 p{
+        font-size: 1.3rem;
+    }
+    .application-content2{
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .application-imgFt2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .application-imgFt2 .AppHydro {
+        border-radius: 1rem;
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.5s ease-in-out;
+    }
+    .application-imgFt5{
+        margin-bottom: 1.5rem;
+    }
+}
+@media(max-width: 619px) {
+    .application-textFt h1{
+        font-size: 4rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 20rem;
+        width: 30rem;
+    }
+}
+@media(max-width: 562px) {
+    .application-textFt h1{
+        font-size: 3.5rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 18rem;
+        width: 28rem;
+    }
+}
+@media(max-width: 513px) {
+    .application-textFt h1{
+        font-size: 3rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 15rem;
+        width: 25rem;
+    }
+}
+@media(max-width: 464px) {
+    .application-textFt h1{
+        font-size: 2.5rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 12rem;
+        width: 22rem;
+    }
+}
+@media(max-width: 400px) {
+    .application-textFt h1{
+        font-size: 2.25rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 9rem;
+        width: 19rem;
+    }
+}
+@media(max-width: 365px) {
+    .application-textFt h1{
+        font-size: 2rem;
+    }
+    .application-imgFt .hydroapplication {
+        height: 7rem;
+        width: 17rem;
+    }
+}
+
+
+@media(max-width: 966px) {
+    .application-content h4 {
+      font-size: 2rem;
+    }
+}
+@media(max-width: 571px) {
+    .application-content h4 {
+      font-size: 2.25rem;
+    }
+}
+@media(max-width: 532px) {
+    .application-content h4 {
+      font-size: 2rem;
+    }
+}
+@media(max-width: 472px) {
+    .application-content h4 {
+      font-size: 1.75rem;
+    }
+}
+@media(max-width: 422px) {
+    .application-content h4 {
+      font-size: 1.5rem;
+    }
+}
+@media(max-width: 374px) {
+    .application-content h4 {
+      font-size: 1.25rem;
+    }
+}
+@media(max-width: 366px) {
+    .application-content h4 {
+      font-size: 1rem;
+    }
 }

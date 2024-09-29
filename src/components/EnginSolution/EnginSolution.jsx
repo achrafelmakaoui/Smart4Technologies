@@ -36,7 +36,7 @@ const EnginSolution = () => {
                     <AnimatedHeading text='Engineering Solutions'/>
                 </h3>
                 <h4>
-                    <AnimatedHeading text="Pioneering the Future, One Innovation at a Time"/>
+                    <AnimatedHeading text="Pioneering the Future, One Innovation at a Time🌍"/>
                 </h4>
             </div>
             <div className='ITSolutions-Tit'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutPage.css'
-import Developer from '../Images/HydroImg.jpg'
+import Developer from '../Images/aboutImg2.jpeg'
 import About from '../Images/AboutUs.png'
 import H2 from '../Images/H2.png'
 import { AnimatedTooltip } from '../TeamAbout/AnimatedTooltip';
@@ -37,7 +37,7 @@ const AboutPage = () => {
         <div className="AboutContainer2">
             <div className="about-content2">
                 <div className="img-side2">
-                    <h2>Our team is formed by professional <mark>specialists.</mark></h2>
+                        <h2>Our team is formed by professional <mark>specialists.</mark></h2>
                     <div className='AnimatedTooltip'>
                       <AnimatedTooltip items={items}/>
                     </div>

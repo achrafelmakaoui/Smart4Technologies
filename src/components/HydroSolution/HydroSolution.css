@@ -202,3 +202,130 @@
     border: 1px solid #30ca59;
     width: 50%;
 }
+
+@media(max-width: 1102px) {
+    .HydroServ-Col2Text span:nth-child(1){
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #30ca59;
+    }
+    .HydroServ-Col2Text span:nth-child(2){
+        color: var(--color);
+        font-family: 'Mulish',sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    .HydroServ-Col2Text{
+        width: 80%;
+    }
+    .ITSolutions-Tit h1{
+        font-size: 5.5rem;
+    }
+}
+@media(max-width: 953px) {
+    .ITSolutions-Tit h1{
+        font-size: 5rem;
+    }
+}
+@media(max-width: 876px) {
+    .ITSolutions-Tit h1{
+        font-size: 4.5rem;
+    }
+}
+@media(max-width: 796px) {
+    .ITSolutions-Tit h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 722px) {
+    .ITSolutions-Tit h1{
+        font-size: 3.5rem;
+    }
+}
+@media(max-width: 645px) {
+    .ITSolutions-Tit h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 562px) {
+    .ITSolutions-Tit h1{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 899px) {
+    .HydroServ-Col2Text{
+        width: 90%;
+    }
+}
+@media(max-width: 801px) {
+    .HydroServ-Col2Text{
+        width: 90%;
+    }
+    .HydroServ-Col1{
+        width: 45%;
+    }
+    .HydroServ-Col2{
+        width: 55%;
+    }
+}
+@media(max-width: 732px) {
+    .HydroServ-Item1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .HydroServ-Col2Text{
+        width: 100%;
+    }
+    .HydroServ-Col1{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    .HydroServ-Col2{
+        width: 100%;
+    }
+    .HydroServ-v1 h2{
+        font-size: 2.5rem;
+    }
+    .HydroServ-v1 h4 {
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 966px) {
+    .Hydrosolution-content h4 {
+      font-size: 2rem;
+    }
+  }
+  @media(max-width: 571px) {
+    .Hydrosolution-content h4 {
+      font-size: 2.25rem;
+    }
+  }
+  @media(max-width: 532px) {
+    .Hydrosolution-content h4 {
+      font-size: 2rem;
+    }
+  }
+  @media(max-width: 472px) {
+    .Hydrosolution-content h4 {
+      font-size: 1.75rem;
+    }
+  }
+  @media(max-width: 422px) {
+    .Hydrosolution-content h4 {
+      font-size: 1.5rem;
+    }
+  }
+  @media(max-width: 374px) {
+    .Hydrosolution-content h4 {
+      font-size: 1.25rem;
+    }
+  }
+  @media(max-width: 366px) {
+    .Hydrosolution-content h4 {
+      font-size: 1rem;
+    }
+  }

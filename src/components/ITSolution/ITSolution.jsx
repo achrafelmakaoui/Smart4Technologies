@@ -27,8 +27,8 @@ const ITSolution = () => {
                     <AnimatedHeading text="Your Trusted Partner for Digital Transformation"/>
                 </h4>
             </div>
-            <div className='ITSolutions-Tit'>
-                <hr className='ITSolutions-hr'/>
+            <div className='ITSolutions2-Tit'>
+                <hr className='ITSolutions2-hr'/>
                 <h1><AnimatedHeading text='AI & Machine Learning Applications'/></h1>
             </div>
             <div className='ITServ-v1'>

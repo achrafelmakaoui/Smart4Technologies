@@ -55,9 +55,9 @@ function App() {
                     <LandPage/>
                     <Services/>
                     <Calculator/>
-                    {/* <AboutPage/> */}
+                    <AboutPage/>
                     <FAQ/>
-                    {/* <Contact/> */}
+                    <Contact/>
                     <Footer/>
                   </>
                 ) : (

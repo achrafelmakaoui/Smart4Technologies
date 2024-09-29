@@ -27,7 +27,7 @@ const Application = () => {
                     <AnimatedHeading text='Revolutionizing Industries: The Broad Applications of Hydrogen'/>
                 </h4>
             </div>
-            <div className='application-content2'>
+            <div className='application-contentheader'>
                 <div className='application-imgFt'>
                     <img src={hydroApp} className="hydroapplication"/>
                 </div>

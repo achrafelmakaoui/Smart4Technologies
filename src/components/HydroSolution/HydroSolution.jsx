@@ -32,7 +32,7 @@ const HydroSolution = () => {
                     <AnimatedHeading text='Hydrogen Solutions'/>
                 </h3>
                 <h4>
-                    <AnimatedHeading text="Unlocking Tomorrow's Energy with Innovative Hydrogen Solutions"/>
+                    <AnimatedHeading text="Unlocking Tomorrow's Energy with Innovative Hydrogen Solutions ⚡"/>
                 </h4>
             </div>
             <div className='ITSolutions-Tit'>

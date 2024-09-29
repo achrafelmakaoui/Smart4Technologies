@@ -37,8 +37,6 @@
 }
 .ContactImg .ContactImgBnner{
     width: 100%;
-    z-index: 999;
-
 }
 .ContactImg .ContactImgBnner img{
     width:100%;
@@ -57,7 +55,6 @@
     background-color: var(--background-color_g);
     border-radius: 10px;
     box-shadow: var(--bx_shdw);
-    z-index: 999;
     border: 1px solid #767676ad;
 }
 .ContactImg .ContactEmailBnner .CircleIconEmail{
@@ -81,6 +78,7 @@
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: 500;
+    text-decoration: none !important;
 }
 /* ///////////////////// */
 .ContactImg .ContactPhoneBnner{
@@ -92,7 +90,6 @@
     background-color: var(--bg_cntc_bnr);
     border-radius: 10px;
     box-shadow: var(--bx_shdw);
-    z-index: 999;
     border: 1px solid #767676ad;
 }
 .ContactImg .ContactPhoneBnner .CircleIconPhone{
@@ -215,7 +212,7 @@
     font-family: 'Poppins',sans-serif;
     font-size: 1.3rem;
     padding: 5px 5px 10px 26px;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     max-width: 85%;
     border-radius:1px;
     outline: 0;
@@ -258,3 +255,152 @@
 .ContactForm form button:hover > .paperEmail{
    color: white;
 }
+
+@media(max-width: 964px) {
+    .ContactForm h4{
+        font-size: 1.8rem;
+    }
+}
+@media(max-width: 911px) {
+    .ContactForm h4{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 820px) {
+    .ContactForm h4{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 891px) {
+    .ContactImg .ContactEmailBnner .LnkEmail h4{
+        font-size: 1.3rem;
+    }
+    .ContactImg .ContactPhoneBnner .NbrPhone h4{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 800px) {
+    .ContactForm h4{
+        font-size: 1.8rem;
+    }
+    .ContactImg .ContactEmailBnner .LnkEmail h4{
+        font-size: 1.5rem;
+    }
+    .ContactImg .ContactPhoneBnner .NbrPhone h4{
+        font-size: 1.5rem;
+    }
+    .Contact-Items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ContactImg{
+        display: grid;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .ContactForm{
+        width: 100%;
+    }
+    .ContactForm form .formName input{
+        max-width: 100%;
+    }
+    .ContactForm form .formEmail input{
+        max-width: 100%;
+    }
+    .ContactForm form .formMessage textarea{
+        max-width: 100%;
+    }
+    .ContactImg .ContactEmailBnner{
+        display: none;
+    }
+    .ContactImg .ContactPhoneBnner{
+        display: none;
+    }
+}
+@media(max-width: 502px) {
+    .ContactForm h4{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 451px) {
+    .ContactForm h4{
+        font-size: 1.4rem;
+    }
+    .ContactImg .ContactEmailBnner .LnkEmail h4{
+        font-size: 1.3rem;
+    }
+    .ContactImg .ContactPhoneBnner .NbrPhone h4{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 404px) {
+    .ContactForm h4{
+        font-size: 1.2rem;
+    }
+    .ContactImg .ContactEmailBnner .LnkEmail h4{
+        font-size: 1.1rem;
+    }
+    .ContactImg .ContactPhoneBnner .NbrPhone h4{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width: 371px) {
+    .ContactForm h4{
+        font-size: 1rem;
+    }
+    .ContactImg .ContactEmailBnner .LnkEmail h4{
+        font-size: 1rem;
+    }
+    .ContactImg .ContactPhoneBnner .NbrPhone h4{
+        font-size: 1rem;
+    }
+    .ContactImg .ContactEmailBnner .LnkEmail h2{
+        font-size: 1.5rem;
+    }
+    .ContactImg .ContactPhoneBnner .NbrPhone h2{
+        font-size: 1.5rem;
+    }
+    .ContactImg .ContactEmailBnner{
+        gap: 10px;
+    }
+    .ContactImg .ContactPhoneBnner{
+        gap: 10px;
+    }
+}
+
+@media(max-width: 966px) {
+    .contact-content h4 {
+      font-size: 2rem;
+    }
+  }
+  @media(max-width: 571px) {
+    .contact-content h4 {
+      font-size: 2.25rem;
+    }
+  }
+  @media(max-width: 532px) {
+    .contact-content h4 {
+      font-size: 2rem;
+    }
+  }
+  @media(max-width: 472px) {
+    .contact-content h4 {
+      font-size: 1.75rem;
+    }
+  }
+  @media(max-width: 422px) {
+    .contact-content h4 {
+      font-size: 1.5rem;
+    }
+  }
+  @media(max-width: 374px) {
+    .contact-content h4 {
+      font-size: 1.25rem;
+    }
+  }
+  @media(max-width: 366px) {
+    .contact-content h4 {
+      font-size: 1rem;
+    }
+  }

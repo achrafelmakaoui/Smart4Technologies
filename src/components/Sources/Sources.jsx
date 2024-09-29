@@ -26,7 +26,7 @@ const Sources = () => {
                     <AnimatedHeading text='Credible References for Understanding Hydrogen Sources'/>
                 </h4>
             </div>
-            <div className='sources-content2'>
+            <div className='sources-contentheader'>
                 <div className='sources-imgFt'>
                     <img src={GrH2} className="GrH2"/>
                 </div>

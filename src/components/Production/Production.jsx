@@ -26,7 +26,7 @@ const Production = () => {
                     <AnimatedHeading text='Exploring Electrolysis Methods in Green Hydrogen Production'/>
                 </h4>
             </div>
-            <div className='production-content2'>
+            <div className='production-contentheader'>
                 <div className='production-imgFt'>
                     <img src={Grelectrolysis} className="Grelectrolysis"/>
                 </div>
@@ -45,7 +45,7 @@ const Production = () => {
                 </div>
             </div>
             <h3 className='sectionMethods2'>Discover the key electrolysis methods driving green hydrogen production:</h3>
-            <div className='production-content2'>
+            <div className='production-content10'>
                 <div className='production-imgFt3'>
                     <img src={ectrolysis1} className="ectrolysis1"/>
                 </div>
@@ -53,7 +53,7 @@ const Production = () => {
                     <p>Alkaline Electrolysis: This is one of the oldest and most established electrolysis technologies. It operates at relatively high temperatures and uses an alkaline electrolyte solution, typically potassium hydroxide (KOH) or sodium hydroxide (NaOH). Alkaline electrolyzers are known for their high efficiency and reliability, but they are also relatively large and require pure water input.</p>
                 </div>
             </div>
-            <div className='production-content2'>
+            <div className='production-content11'>
                 <div className='production-textFt2'>
                     <p>PEM (Proton Exchange Membrane) Electrolysis: PEM Electrolysis operates at lower temperatures compared to alkaline electrolysis and uses a solid polymer electrolyte membrane to conduct protons. This technology offers advantages such as rapid start-up times, high efficiency at part-load operation, and compact design. PEM electrolyzers are particularly suitable for small-scale applications and for integrating with renewable energy sources like solar and wind.</p>
                 </div>
@@ -61,7 +61,7 @@ const Production = () => {
                     <img src={ectrolysis2} className="ectrolysis2"/>
                 </div>
             </div>
-            <div className='production-content2'>
+            <div className='production-content10'>
                 <div className='production-imgFt5'>
                     <img src={ectrolysis3} className="ectrolysis3"/>
                 </div>
@@ -69,7 +69,7 @@ const Production = () => {
                     <p>Solid Oxide Electrolysis: Solid oxide electrolysis cells (SOEC) operate at high temperatures, typically above 500°C, and use a solid ceramic electrolyte. They can operate in reverse mode, converting steam and electricity into hydrogen and oxygen. SOECs have the potential for high efficiency, especially when waste heat from other industrial processes is utilized, but they currently face challenges related to materials durability and cost.</p>
                 </div>
             </div>
-            <div className='production-content2'>
+            <div className='production-content11'>
                 <div className='production-textFt2'>
                     <p>High-Temperature Electrolysis: High-temperature electrolysis (HTE) operates at temperatures similar to solid oxide electrolysis but uses different materials and operating principles. It typically involves the use of solid oxide electrolyte materials like cerium oxide (ceria) or yttria-stabilized zirconia (YSZ). HTE has the advantage of utilizing heat from high-temperature sources such as concentrated solar power or nuclear reactors to improve overall energy efficiency.</p>
                 </div>
@@ -92,7 +92,7 @@ const Production = () => {
                 <hr className='greenHydro-hr'/>
                 <h1><AnimatedHeading text='Anode Reaction'/></h1>
             </div>
-            <div className='production-content2'>
+            <div className='production-content10'>
             <div className='production-imgFt5'>
                     <img src={Anode} className="ectrolysis4"/>
                 </div>
@@ -105,7 +105,7 @@ const Production = () => {
                 <hr className='greenHydro-hr'/>
                 <h1><AnimatedHeading text='Catode Reaction'/></h1>
             </div>
-            <div className='production-content2'>
+            <div className='production-content10'>
                 <div className='production-imgFt5'>
                     <img src={Cathode} className="ectrolysis4"/>
                 </div>

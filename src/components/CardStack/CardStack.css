@@ -91,3 +91,49 @@
     color: #30ca59; /* emerald-500 */
   }
   
+
+@media(max-width: 1003px) {
+  .card-contentt {
+    font-size: 1.2rem;
+  }
+  .card-contentt-dark {
+    font-size: 1.2rem;
+  }
+  .highlight {
+    font-size: 1.25rem;
+
+  }
+  .highlight-dark {
+    font-size: 1.25rem;
+  }
+}
+@media(max-width: 842px) {
+  .card-contentt {
+    font-size: 1.05rem;
+  }
+  .card-contentt-dark {
+    font-size: 1.05rem;
+  }
+  .highlight {
+    font-size: 1.05rem;
+
+  }
+  .highlight-dark {
+    font-size: 1.05rem;
+  }
+}
+@media(max-width: 400px) {
+  .card-contentt {
+    font-size: 0.9rem;
+  }
+  .card-contentt-dark {
+    font-size: 0.9rem;
+  }
+  .highlight {
+    font-size: 0.9rem;
+
+  }
+  .highlight-dark {
+    font-size: 0.9rem;
+  }
+}

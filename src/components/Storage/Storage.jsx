@@ -24,7 +24,7 @@ const Storage = () => {
                     <AnimatedHeading text='Advancing Techniques in Hydrogen Storage Solutions'/>
                 </h4>
             </div>
-            <div className='storage-content2'>
+            <div className='storage-contentheader'>
                 <div className='storage-imgFt'>
                     <img src={hydroStorage} className="hydroStorage"/>
                 </div>
@@ -68,7 +68,7 @@ const Storage = () => {
             </div>
             <div className='GreenHydro'>
                 <hr className='greenHydro-hr'/>
-                <h1><AnimatedHeading text='Liquid Hydrogen'/></h1>
+                <h1><AnimatedHeading text='Metal Hydride'/></h1>
             </div>
             <div className='storage-content2'>
                 <div className='storage-imgFt5'>

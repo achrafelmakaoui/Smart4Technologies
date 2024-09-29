@@ -12,7 +12,7 @@ const Alert = ({ handleClose }) => {
             </div>
             <div className='TextAlert'>
                 <h2>Message Received!</h2>
-                <h4>Your message has been successfully received.</h4>
+                <h4>Your message has been<br/> successfully received.</h4>
             </div>
             <div className='CloseAlertIcon'>
                 <svg fill="#767676" height="16" width="16" viewBox="0 0 384 512" onClick={handleClose}>
