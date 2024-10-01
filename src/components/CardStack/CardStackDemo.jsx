@@ -14,45 +14,34 @@ export function CardStackDemo() {
 const CARDS = [
   {
     id: 0,
-    name: "Manu Arora",
-    designation: "Senior Software Engineer",
+    name: "Abdelilah Zaari ",
+    designation: "Software Developer and Project Manager",
     content: (
       <p>
-        A visionary hydrogen <Highlight>expert pioneering</Highlight> sustainable energy solutions, 
-        known for <Highlight>innovative strategies</Highlight> and deep expertise in hydrogen systems.
+        Visionary developer and <Highlight>project manager</Highlight> at S4T, leading hydrogen tools globally,
+        <Highlight>shaping the future</Highlight> of sustainable energy.
       </p>
     ),
   },
   {
     id: 1,
-    name: "Elon Musk",
-    designation: "Senior Shitposter",
+    name: "Abderrahmane Ait El Mouddene",
+    designation: "Big Data and IoT Specialist",
     content: (
       <p>
-        A visionary hydrogen <Highlight>expert pioneering</Highlight> sustainable energy solutions, 
-        known for <Highlight>innovative strategies</Highlight> and deep expertise in hydrogen systems.
+        Masters student in <Highlight>Big Data and IoT</Highlight>, visionary developer at S4T,
+        <Highlight>shaping sustainable energy</Highlight> with hydrogen tools globally.
       </p>
     ),
   },
   {
     id: 2,
-    name: "Tyler Durden",
-    designation: "Manager Project Mayhem",
-    content: (
-      <p>
-        A visionary hydrogen <Highlight>expert pioneering</Highlight> sustainable energy solutions, 
-        known for <Highlight>innovative strategies</Highlight> and deep expertise in hydrogen systems.
-      </p>
-    ),
-  },
-  {
-    id: 3,
     name: "Achraf El Makaoui",
-    designation: "Web Developer",
+    designation: "Frontend Developer",
     content: (
       <p>
-        A visionary hydrogen <Highlight>expert pioneering</Highlight> sustainable energy solutions, 
-        known for <Highlight>innovative strategies</Highlight> and deep expertise in hydrogen systems.
+        Innovative <Highlight>Frontend developer</Highlight> with expertise in building interfaces.
+        <Highlight>Licensed in Big Data</Highlight>, combining skills to deliver impactful solutions.
       </p>
     ),
   },

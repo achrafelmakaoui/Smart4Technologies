@@ -46,8 +46,32 @@ const PrivacyPolicy = () => {
             <div className='privacyPolicy-body'>
                 <h3>Last updated as of September 06, 2024</h3>
                 <hr/>
-                <h3>Services</h3>
-                <p>wecraft offers a range of design services, including but not limited to graphic design, web design, branding, and illustration.The Company will provide the agreed-upon services with professionalism and expertise, following industry standards and best practices. The specific details, deliverables, timelines, and pricing for each project will be</p>
+                <h3>Introduction</h3>
+                <p>At Smart4Technologies (S4T), we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect any information that you provide while using our website.</p>
+            </div>
+            <div className='privacyPolicy-body'>
+                <h3>Information We Collect</h3>
+                <p>We may collect the following types of information: Personal Information: Name, email address, company, or other details you provide when contacting us or using certain features like our web application calculator. Usage Data: Information about how you interact with our website (e.g., IP address, browser type, pages viewed).</p>
+            </div>
+            <div className='privacyPolicy-body'>
+                <h3>Use of Information</h3>
+                <p>We use the collected information to: Provide, improve, and customize our services. Respond to inquiries or support requests. Analyze website performance to enhance user experience.</p>
+            </div>
+            <div className='privacyPolicy-body'>
+                <h3>Cookies</h3>
+                <p>We use cookies to gather data on how users interact with our site. You can adjust your browser settings to block cookies, but this may impact your experience with certain features of our site.</p>
+            </div>
+            <div className='privacyPolicy-body'>
+                <h3>Sharing of Information</h3>
+                <p>We do not sell, trade, or share your personal information with third parties, except as necessary to operate the site or when required by law.</p>
+            </div>
+            <div className='privacyPolicy-body'>
+                <h3>Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your information from unauthorized access, loss, or misuse.</p>
+            </div>
+            <div className='privacyPolicy-body'>
+                <h3>Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your information from unauthorized access, loss, or misuse.</p>
             </div>
             <div className='privacyPolicy-end'>
                 

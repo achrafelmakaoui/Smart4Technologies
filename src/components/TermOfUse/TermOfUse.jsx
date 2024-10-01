@@ -46,8 +46,28 @@ const TermOfUse = () => {
             <div className='termofuse-body'>
                 <h3>Last updated as of September 06, 2024</h3>
                 <hr/>
-                <h3>Services</h3>
-                <p>wecraft offers a range of design services, including but not limited to graphic design, web design, branding, and illustration.The Company will provide the agreed-upon services with professionalism and expertise, following industry standards and best practices. The specific details, deliverables, timelines, and pricing for each project will be</p>
+                <h3>Introduction</h3>
+                <p>Welcome to Smart4Technologies (S4T). By accessing or using our website, including the web application calculator, you agree to comply with and be bound by these Terms of Use. If you do not agree, you must discontinue use of the site and its services.</p>
+            </div>
+            <div className='termofuse-body'>
+                <h3>Use of the Website</h3>
+                <p>ou may use the site and the web application calculator only for lawful purposes. Any misuse, such as attempting to hack, distribute malware, or disrupt the service, is strictly prohibited. You agree not to copy, distribute, or modify any part of the site’s content without our written consent.</p>
+            </div>
+            <div className='termofuse-body'>
+                <h3>Web Application Calculator</h3>
+                <p>The web application calculator is a predictive and professional tool designed to help model and optimize the hydrogen value chain. This tool can assist with both technical and economic analysis, providing insights and recommendations that support decision-making processes. While the calculator provides professional advice, it is your responsibility to verify and consider other factors before making any final decisions based on the tool’s outputs.</p>
+            </div>
+            <div className='termofuse-body'>
+                <h3>Intellectual Property</h3>
+                <p>All content on this website, including the calculator and other software tools, is the intellectual property of Smart4Technologies. Unauthorized reproduction or use of the content is prohibited.</p>
+            </div>
+            <div className='termofuse-body'>
+                <h3>Limitation of Liability</h3>
+                <p>Smart4Technologies is not liable for any loss or damage that may arise from your use of the website or the web application calculator. This includes any technical or economic losses from decisions made based on the tool’s predictions.</p>
+            </div>
+            <div className='termofuse-body'>
+                <h3>Changes to the Terms</h3>
+                <p>We reserve the right to modify these Terms of Use at any time. Continued use of the website following any changes means you accept the new terms.</p>
             </div>
             <div className='termofuse-end'>
                 
