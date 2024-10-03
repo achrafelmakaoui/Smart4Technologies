@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './TermOfUse.css'
 import { gsap, Power2 } from 'gsap';
+import { Link } from 'react-router-dom';
 
 const TermOfUse = () => {
     const TextAnimation = useRef();
@@ -42,6 +43,7 @@ const TermOfUse = () => {
                 <h1 ref={TextAnimation}>Terms Of Use</h1>
                 <h3 ref={paraghAnimation}>Dive into transparency, trust, and a seamless partnership</h3> 
                 <h3 ref={paraghAnimation2}>as we navigate this digital landscape together.</h3> 
+                <h3 className='h3Mobile'>Dive into transparency, trust, and a seamless partnership as we navigate this digital landscape together.</h3>
             </div>
             <div className='termofuse-body'>
                 <h3>Last updated as of September 06, 2024</h3>
@@ -70,7 +72,9 @@ const TermOfUse = () => {
                 <p>We reserve the right to modify these Terms of Use at any time. Continued use of the website following any changes means you accept the new terms.</p>
             </div>
             <div className='termofuse-end'>
-                
+                <div className='text-h1'><h1>Get in Touch!</h1></div>
+                <div className='text-p'><p>Reach out to Smart4Technologies for expert advice on hydrogen systems and tailored support for your specific project needs.</p></div>
+                <div className='text-btn'><Link to='/'>Contact Us</Link></div>
             </div>
         </div>
     </div>

@@ -51,7 +51,7 @@ const Services = () => {
                 <div class="card-info">
                   <div class="card-info-title">
                     <h3>Hydrogen Solutions</h3>  
-                    <h4>Our cutting-edge H2chain software allows modeling of the entire value chain and informed decision-making. Maximize storage potential through optimized tank design and safety enhancements.</h4>
+                    <h4>Our cutting-edge H2chain software models the entire value chain for informed decision-making. Maximize storage potential with optimized tank design and safety enhancements.</h4>
                   </div>    
                 </div>
               </div>

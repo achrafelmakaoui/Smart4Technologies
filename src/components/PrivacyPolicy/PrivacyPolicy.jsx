@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './PrivacyPolicy.css'
 import { gsap, Power2 } from 'gsap';
+import { Link } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
     const TextAnimation = useRef();
@@ -42,6 +43,7 @@ const PrivacyPolicy = () => {
                 <h1 ref={TextAnimation}>Privacy Policy</h1>
                 <h3 ref={paraghAnimation}>Learn about the data we collect, how we use it and the measures </h3> 
                 <h3 ref={paraghAnimation2}>we take to protect your personal information.</h3> 
+                <h3 ref={paraghAnimation} className='h3Mobile'>Learn about the data we collect, how we use it and the measures we take to protect your personal information.</h3>
             </div>
             <div className='privacyPolicy-body'>
                 <h3>Last updated as of September 06, 2024</h3>
@@ -74,7 +76,9 @@ const PrivacyPolicy = () => {
                 <p>We implement appropriate technical and organizational measures to protect your information from unauthorized access, loss, or misuse.</p>
             </div>
             <div className='privacyPolicy-end'>
-                
+                <div className='text-h1'><h1>Get in Touch!</h1></div>
+                <div className='text-p'><p>Reach out to Smart4Technologies for expert advice on hydrogen systems and tailored support for your specific project needs.</p></div>
+                <div className='text-btn'><Link to='/'>Contact Us</Link></div>
             </div>
         </div>
     </div>

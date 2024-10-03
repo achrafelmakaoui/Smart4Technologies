@@ -3,25 +3,44 @@ import './Contact.css'
 import ContactImg from '../Images/support.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faEnvelopeOpen, faCircleUser, faEnvelopeOpenText,} from '@fortawesome/free-solid-svg-icons'
-// import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import Alert from './Alert/Alert'
 import AnimatedHeading from '../../AnimatedHeading';
 
 const Contact = () => {
     const [SuccAlert,setSuccAlert]=useState(false);
-    const form = useRef();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setSuccAlert(true);
-    setTimeout(() => {
-        setSuccAlert(false);
-    }, 5000);
-  };
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-  const handleClickXMarkAlert = () => {
-    setSuccAlert(false)
-  } 
+        const templateParams = {
+            name,
+            email,
+            message,
+        };
+
+        emailjs.send('service_zgx25wh', 'template_le7o07o', templateParams, '5R7w7JO7TMVjl_L7_')
+            .then((response) => {
+                console.log('Email sent successfully!', response.status, response.text);
+                e.target.reset();
+                setName('');  // Reset the name input
+                setEmail('');  // Reset the email input
+                setMessage('');  // Reset the message input
+                setSuccAlert(true);
+                setTimeout(() => {
+                    setSuccAlert(false);
+                }, 5000);
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error);
+            });
+    };
+    const handleClickXMarkAlert = () => {
+        setSuccAlert(false)
+    } 
 
   return (
     <section className="contact" id="Contact">
@@ -44,37 +63,39 @@ const Contact = () => {
                             </div>
                             <div className='LnkEmail'>
                                 <h2>Email</h2>
-                                <h4>smart4technologies@gmail.com</h4>
+                                <h4>Support@smart4technologies.com</h4>
                             </div>
                         </div>
                         <div className='ContactPhoneBnner'>
                             <div className='CircleIconPhone'>
-                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#30ca59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
-                                    <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#30ca59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
                                 </svg>                          
                             </div>
                             <div className='NbrPhone'>
-                                <h2>Phone</h2>
+                                <h2>Linkedin</h2>
                                 <h4>+212 6 26 62 73 78</h4>
                             </div>
                         </div>
                     </div>
                     <div className='ContactForm'>
                         <h4>Feel free to reach out through our inbox 📬.<br/> We're all ears and eager to connect!</h4>
-                        <form ref={form} onSubmit={sendEmail}>
+                        <form onSubmit={sendEmail}>
                             <div className='formName'>
                                 <label>First Name</label>
-                                <input type="text" placeholder='First Name...' name="user_name" required/>
+                                <input type="text" placeholder='First Name...' value={name} onChange={(e) => setName(e.target.value)} required/>
                                 <FontAwesomeIcon icon={faCircleUser} className='UserIcon' />
                             </div>
                             <div className='formEmail'>
                                 <label>Email Address</label>
-                                <input type="email" placeholder='Email Addres...' name="user_email" required/>
+                                <input type="email" placeholder='Email Addres...' value={email} onChange={(e) => setEmail(e.target.value)} required/>
                                 <FontAwesomeIcon icon={faEnvelopeOpen} className='Envolope' />
                             </div>
                             <div className='formMessage'>
                                 <label>Message</label>
-                                <textarea placeholder='Leave me a message...' name="message" required/>
+                                <textarea placeholder='Leave me a message...' value={message} onChange={(e) => setMessage(e.target.value)} required/>
                                 <FontAwesomeIcon icon={faEnvelopeOpenText} className='EnvelopeText' />
                             </div>
                             <button type='submit'>

@@ -27,7 +27,6 @@
     overflow: hidden;
     background-color: var(--background-color_w);
     margin-top: 2rem;
-
 }
 .intro-content h1 span{
     color: var(--color);
@@ -38,71 +37,72 @@
     animation: text-animation 1.25s ease forwards 4.1s;
     display: inline-block;
 }
-
 .intro-bar {
     display: grid;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--background-color_g); */
     z-index: 2;
 }
 
 #logo{
-    fill: transparent;
     stroke-width: 0.75;
     animation: file 1s ease forwards 3.1s;
 }
 #logo path:nth-child(1){
     stroke-dasharray: 29.9438533782959px;
     stroke-dashoffset: 29.9438533782959px;
-    animation: line-animation 3s ease forwards;
-    stroke: var(--color);
+    animation: line-animation 3s ease forwards, fillTransition 3.25s steps(1, end) forwards;
 }
 #logo path:nth-child(2){
     stroke-dasharray: 88.92008209228516px;   
     stroke-dashoffset: 88.92008209228516px;
-    animation: line-animation 3s ease forwards;
-    stroke: var(--color);
+    animation: line-animation 3s ease forwards, fillTransition 3.25s steps(1, end) forwards;
+
 }
 #logo path:nth-child(3){
     stroke-dasharray: 385.8758850097656px;  
     stroke-dashoffset: 385.8758850097656px;
     animation: line-animation 3s ease forwards;
-    stroke: var(--color);
 }
 #logo path:nth-child(4){
     stroke-dasharray: 189.17132568359375px;  
     stroke-dashoffset: 189.17132568359375px;
     animation: line-animation 3s ease forwards;
-    stroke: var(--color);
 }
 #logo path:nth-child(5){
     stroke-dasharray: 127.477783203125px;  
     stroke-dashoffset: 127.477783203125px;
     animation: line-animation 3s ease forwards;
-    stroke: var(--color);
 }
 #logo path:nth-child(6){
     stroke-dasharray: 273.21661376953125px;  
     stroke-dashoffset: 273.21661376953125px;
     animation: line-animation 3s ease forwards;
-    stroke: var(--color);
 }
 #logo path:nth-child(7){
     stroke-dasharray: 78.10133361816406px;  
     stroke-dashoffset: 78.10133361816406px;
     animation: line-animation 3s ease forwards;
-    stroke: var(--color);
 }
 #logo path:nth-child(8){
     stroke-dasharray: 69.56083679199219px;  
     stroke-dashoffset: 69.56083679199219px;
     animation: line-animation 3s ease forwards;
-    stroke: var(--color);
 }
 @keyframes line-animation {
     to{
         stroke-dashoffset: 0;
+    }
+}
+@keyframes fillTransition {
+    0% {
+        fill: transparent;
+    }
+    99.9% {
+        fill: transparent;
+    }
+    100% {
+        fill: #30ca59;
     }
 }
 @keyframes file {

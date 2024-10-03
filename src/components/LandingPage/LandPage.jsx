@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './LandPage.css'
-import Navbar from '../Navbar/Navbar'
 import { gsap, Power2 } from 'gsap';
-import Hydrogen from '../Images/HYDROGENT.png'
 import ParticlesComponent from './Particles';
 import { Link } from 'react-router-dom';
 
@@ -68,14 +66,11 @@ const LandPage = () => {
                     <div className='hero-analis' ref={iconsAnimation2}>
                         <div className='hero-analis-st'>
                             <div className='cl1'>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
                             </div>
                             <div className='cl2'>
-                                <span>3500+</span>
-                                <span>Stasfied users</span>
+                                <span>15+</span>
+                                <span>Trusted company</span>
                             </div>
                         </div>
                         <div className='hero-analis-sd'>
@@ -86,27 +81,13 @@ const LandPage = () => {
                                 </svg>
                             </div>
                             <div className='cl2'>
-                                <span>250K+</span>
-                                <span>Successful transactions</span>
+                                <span>10+</span>
+                                <span>Years experience</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='hero-img' ref={ImgAnimation}>
-                    <div className='hero-img-st-row'>
-                        <div className='hero-img-banner'>
-                            <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
-                                    <line x1="18" y1="20" x2="18" y2="10"></line>
-                                    <line x1="12" y1="20" x2="12" y2="4"></line>
-                                    <line x1="6" y1="20" x2="6" y2="14"></line>
-                                </svg>
-                            </span>
-                            <span>Total Balance</span>
-                            <span>$435,15</span>
-                            <span><a>+8,86%</a></span>
-                        </div>
-                    </div>
                     <div class="hero-img-sd-row" ref={Img2Animation}>
                         <div class="ratingText">
                             <span>AVERAGE RATING OF ALL THE PROJECTS WE HAVE WORKED ON</span>
