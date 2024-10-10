@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ForgetPwd.css";
 import signUpLogo from '../Images/H2_hydrogen.png'
-import { Link } from "react-router-dom";
 export function ForgetPwd() {
-  const [passwordType, setPasswordType] = useState('password');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
   };
-  const togglePasswordVisibility = (e) => {
-    e.preventDefault();
-    setPasswordType(passwordType === 'password' ? 'text' : 'password');
-  }
   return (
     <div className="forgetpwd-container">
       <img className="forgetpwd-img" src={signUpLogo} alt="signUpLogo"/>

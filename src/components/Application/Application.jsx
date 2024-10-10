@@ -29,7 +29,7 @@ const Application = () => {
             </div>
             <div className='application-contentheader'>
                 <div className='application-imgFt'>
-                    <img src={hydroApp} className="hydroapplication"/>
+                    <img src={hydroApp} className="hydroapplication" alt='application'/>
                 </div>
                 <div className='application-textFt'>
                     <h1><AnimatedHeading text='Hydrogen'/></h1>
@@ -41,7 +41,7 @@ const Application = () => {
                     <p>Hydrogen boasts a vast array of applications across numerous sectors, owing to its versatile properties as both an energy carrier and a chemical feedstock. These applications span a wide range of industries, reflecting hydrogen's ability to play a crucial role in the global transition to clean energy. As an energy carrier, hydrogen can be utilized in various forms, such as fuel for transportation, storage for renewable energy, and a source of power for industrial processes. Additionally, its role as a chemical feedstock makes it indispensable in the production of essential chemicals, such as ammonia and methanol. The diverse applications of hydrogen extend from powering fuel cells for clean energy generation to its use in space exploration, offering promising solutions for reducing carbon emissions and advancing sustainable technologies.</p>
                 </div>
                 <div className='application-imgFt2'>
-                    <img src={ApplicationHydrogen} className="AppHydro"/>
+                    <img src={ApplicationHydrogen} className="AppHydro" alt='application'/>
                 </div>
             </div>
             <h3 className='sectionMethods2'>Unleashing Hydrogen's Potential: Diverse Applications Across Sectors:</h3>
@@ -51,7 +51,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
             <div className='application-imgFt5'>
-                    <img src={Ap1} className="Ap1"/>
+                    <img src={Ap1} className="Ap1" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen can be used as a clean energy source in fuel cells to generate electricity with only water and heat as byproducts. Fuel cells are used in various applications, including stationary power generation for buildings and remote locations, backup power systems, and portable electronics.</p>
@@ -63,7 +63,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap2} className="Ap2"/>
+                    <img src={Ap2} className="Ap2" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen fuel cell vehicles (FCVs) use hydrogen as a fuel to power electric motors, offering zero-emission transportation with longer range and faster refueling compared to battery electric vehicles. Hydrogen-powered buses, trucks, trains, and even drones are being developed and deployed as part of efforts to decarbonize the transportation sector.</p>
@@ -75,7 +75,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap3} className="Ap3"/>
+                    <img src={Ap3} className="Ap3" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen can store excess renewable energy generated from sources like solar and wind power through processes like electrolysis. This stored hydrogen can then be used during periods of high demand or when renewable energy generation is low, helping to balance the grid and support the integration of renewables into the energy system.</p>
@@ -87,7 +87,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap4} className="Ap4"/>
+                    <img src={Ap4} className="Ap4" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen is widely used in various industrial processes, including petroleum refining, ammonia production for fertilizer manufacturing, methanol production, and as a reducing agent in metal refining processes. Using hydrogen as a feedstock or fuel in these processes can help reduce greenhouse gas emissions and improve overall process efficiency.</p>
@@ -99,7 +99,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap5} className="Ap5"/>
+                    <img src={Ap5} className="Ap5" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen serves as a key feedstock for the production of numerous chemicals, including ammonia, methanol, hydrogen peroxide, and various organic compounds. These chemicals are essential for manufacturing processes in industries such as agriculture, pharmaceuticals, plastics, and electronics.</p>
@@ -111,7 +111,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap6} className="Ap6"/>
+                    <img src={Ap6} className="Ap6" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen combustion can be used for heat and power generation in conventional gas turbines and internal combustion engines, offering an alternative to fossil fuels while producing minimal emissions, especially when coupled with carbon capture and storage (CCS) technologies.</p>
@@ -123,7 +123,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap7} className="Ap7"/>
+                    <img src={Ap7} className="Ap7" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen can play a crucial role in decarbonizing existing energy infrastructure by replacing natural gas in heating systems, power plants, and industrial boilers. Blending hydrogen with natural gas or converting natural gas networks to hydrogen infrastructure are being explored as pathways to reduce carbon emissions in the heating sector.</p>
@@ -135,7 +135,7 @@ const Application = () => {
             </div>
             <div className='application-content2'>
                 <div className='application-imgFt5'>
-                    <img src={Ap8} className="Ap8"/>
+                    <img src={Ap8} className="Ap8" alt='application'/>
                 </div>
                 <div className='application-textFt2'>
                     <p>Hydrogen is used as a propellant in rockets due to its high energy density and efficient combustion properties. Liquid hydrogen and liquid oxygen are commonly used as rocket propellants in space exploration missions, including satellite launches, crewed missions, and interplanetary exploration.</p>

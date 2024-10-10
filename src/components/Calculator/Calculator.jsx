@@ -42,21 +42,21 @@ const Calculator = () => {
           <AnimatedHeading text='Power Your Future with Our Tailored Hydrogen Solutions ⚡.'/>
         </h4>
         <div id="cardsCalculator" ref={cardsReff}>
-          <div class="cardCalculator">
-            <div class="cardCalculator-content">
-              <div class="cardCalculator-image">
+          <div className="cardCalculator">
+            <div className="cardCalculator-content">
+              <div className="cardCalculator-image">
                 <img src={Sources} alt='Sources'/>
               </div>
-              <div class="cardCalculator-info-wrapper">
-                <div class="cardCalculator-info">
+              <div className="cardCalculator-info-wrapper">
+                <div className="cardCalculator-info">
                     <h3>Sources</h3>     
                 </div>
               </div>
             </div>
             <div className='pro__items_Calculator'>
               <Link to="/sources">
-                <span>Read More
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <span>Explore Now
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
@@ -64,21 +64,21 @@ const Calculator = () => {
               </Link>
             </div>
           </div>
-          <div class="cardCalculator">
-            <div class="cardCalculator-content">
-              <div class="cardCalculator-image">
+          <div className="cardCalculator">
+            <div className="cardCalculator-content">
+              <div className="cardCalculator-image">
                 <img src={Production} alt='Production'/>
               </div>
-              <div class="cardCalculator-info-wrapper">
-                <div class="cardCalculator-info">
+              <div className="cardCalculator-info-wrapper">
+                <div className="cardCalculator-info">
                     <h3>Production</h3>     
                 </div>
               </div>
             </div>
             <div className='pro__items_Calculator'>
               <Link to="/production">
-                <span>Read More
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <span>Explore Now
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
@@ -86,21 +86,21 @@ const Calculator = () => {
               </Link>
             </div>
           </div>
-          <div class="cardCalculator">
-            <div class="cardCalculator-content">
-              <div class="cardCalculator-image">
+          <div className="cardCalculator">
+            <div className="cardCalculator-content">
+              <div className="cardCalculator-image">
                 <img src={Storage} alt='Storage'/>
               </div>
-              <div class="cardCalculator-info-wrapper">
-                <div class="cardCalculator-info">
+              <div className="cardCalculator-info-wrapper">
+                <div className="cardCalculator-info">
                     <h3>Storage</h3>     
                 </div>
               </div>
             </div>
             <div className='pro__items_Calculator'>
               <Link to="/storage">
-                <span>Read More
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <span>Explore Now
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
@@ -108,21 +108,21 @@ const Calculator = () => {
               </Link>
             </div>
           </div>
-          <div class="cardCalculator">
-            <div class="cardCalculator-content">
-              <div class="cardCalculator-image">
+          <div className="cardCalculator">
+            <div className="cardCalculator-content">
+              <div className="cardCalculator-image">
                 <img src={Application} alt='Application'/>
               </div>
-              <div class="cardCalculator-info-wrapper">
-                <div class="cardCalculator-info">
+              <div className="cardCalculator-info-wrapper">
+                <div className="cardCalculator-info">
                     <h3>Application</h3>     
                 </div>
               </div>
             </div>
             <div className='pro__items_Calculator'>
               <Link to="/application">
-                <span>Read More
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <span>Explore Now
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
@@ -131,7 +131,7 @@ const Calculator = () => {
             </div>
           </div>
         </div>
-        <Link to="/signin" className='btnGetStartedA'><span className='btnGetStarted'>Get Started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span></Link>
+        <Link to="/signin" className='btnGetStartedA'><span className='btnGetStarted'>Get Started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span></Link>
       </div>
     </section>
   )

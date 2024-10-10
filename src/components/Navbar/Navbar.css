@@ -46,6 +46,7 @@ nav .navLogo{
 }
 nav .navLogo img{
     width: 55px;
+    height: fit-content;
     padding: 0;
 }
 nav .navLinks{

@@ -27,8 +27,8 @@ const AboutPage = () => {
                 </div>
                 <div className="img-side">
                     <img src={H2} alt="emoji" className="work-emoji"/>
-                    <img src={Developer} alt="mee" className="img-side__main-img"/>
-                    <span class="circleHydro">
+                    <img src={Developer} className="img-side__main-img" alt="about"/>
+                    <span className="circleHydro">
                         <img src={About} alt="emoji"/>
                     </span>
                 </div>

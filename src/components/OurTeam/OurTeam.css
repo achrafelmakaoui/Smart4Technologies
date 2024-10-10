@@ -1,0 +1,575 @@
+.ourTeam{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background-color_w);
+}
+.ourTeam-content{
+    margin: 0 auto;
+    padding: 120px 4rem 25px 4rem;
+    max-width: 107rem;
+}
+.ourTeam-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.ourTeam-header .ourTeam-Title{
+    color: #30ca59;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ourTeam-header h1{
+    color: var(--color);
+    font-size: 4rem;
+    font-size: clamp(1.3rem, -0.6194rem + 10.237vw, 4rem);
+    font-family: Poppins,sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1;
+}
+.ourTeam-header .normalH3{
+    text-align: center;
+    color: #30ca59;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 3.75rem;
+    font-size: clamp(1.3rem, -0.4417rem + 9.2891vw, 3.75rem);
+    line-height: 1.5;
+    width: 100%;
+    text-transform: capitalize;
+}
+.ourTeam-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ourTeam-cards .TeamMember1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ourTeam-cards .TeamMember1 .card{
+    flex: 1 1 28%;
+    max-width: 28%;
+    margin: 7.5px;
+    box-sizing: border-box;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+.ourTeam-cards .TeamMember1 .card:nth-child(4),
+.ourTeam-cards .TeamMember1 .card:nth-child(5) {
+    flex: 1 1 28%; 
+    max-width: 28%;
+}
+
+.ourTeam-cards .TeamMember1 .card .card-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.ourTeam-cards .TeamMember1 .card .card-image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.457), transparent); /* Gradient from bottom to transparent */
+    pointer-events: none;
+    border-radius: 1rem;
+}
+.ourTeam-cards .TeamMember1 .card .card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.insideImage {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: opacity 0.1s ease-in-out;
+    opacity: 1;
+}
+.insideImage .LinkeedInIcon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 32.5px;
+    height: 32.5px;
+    border-radius: 5px;
+    background-color: #007ebb;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.insideImage .LinkeedInIcon a{
+    color: white;
+    text-decoration: none;
+}
+.insideImage .TeamMember-Name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+.insideImage .TeamMember-Name h1{
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+.insideImage .TeamMember-Name h3{
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #30ca59;
+}
+.banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 30rem;
+    background-color: var(--background-color_w);
+    border-radius: 1rem;
+    color: white;
+    overflow: hidden;
+    z-index: 99;
+    backdrop-filter: blur(3px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    /* scale: 0; */
+}
+.card:hover > .banner {
+    bottom: 0;
+    border: 2px solid var(--color);
+    opacity: 1;
+    /* scale: 1; */
+}
+.card:hover > .insideImage{
+    opacity: 0;
+}
+.bnr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 100;
+}
+.bnr .title,
+.bnr .subtitle,
+.bnr .linkedIn-Icon{
+    position: relative;
+    z-index: 100;
+}
+.bnr .linkedIn-Icon{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: #007ebb;
+    color: white;
+    cursor: pointer;
+}
+.bnr .linkedIn-Icon a{
+    color: white;
+    text-decoration: none;
+}
+.bnr .title h1{
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color);
+}
+.bnr .subtitle h3{
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #30ca59;
+}
+.bnr .description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+}
+.bnr .description p{
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    text-align: justify;
+    color: var(--color);
+}
+
+@media (max-width: 1037px) {
+    .bnr .title h1{
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 1027px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 997px) {
+    .bnr .title h1{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 987px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.8rem;
+    }
+    .bnr .description p{
+        font-size: 1.05rem;
+    }
+}
+@media (max-width: 957px) {
+    .bnr .title h1{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 947px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.7rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 917px) {
+    .ourTeam-cards .TeamMember1 .card{
+        flex: 1 1 30%;
+        max-width: 30%;
+        margin: 7.5px;
+        box-sizing: border-box;
+        height: 30rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .ourTeam-cards .TeamMember1 .card:nth-child(4),
+    .ourTeam-cards .TeamMember1 .card:nth-child(5) {
+        flex: 1 1 30%; 
+        max-width: 30%;
+    }
+}
+@media (max-width: 862px) {
+    .bnr .title h1{
+        font-size: 1.6rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 852px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 825px) {
+    .bnr .title h1{
+        font-size: 1.5rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 814px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.5rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 800px) {
+    .ourTeam-cards .TeamMember1 .card{
+        flex: 1 1 31%;
+        max-width: 31%;
+        margin: 7.5px;
+        box-sizing: border-box;
+        height: 30rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .ourTeam-cards .TeamMember1 .card:nth-child(4),
+    .ourTeam-cards .TeamMember1 .card:nth-child(5) {
+        flex: 1 1 31%; 
+        max-width: 31%;
+    }
+}
+@media (max-width: 780px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.4rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.3rem;
+    }
+    .bnr .title h1{
+        font-size: 1.4rem;
+    }
+    .bnr .description p{
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 750px) {
+    .ourTeam-cards .TeamMember1 .card{
+        flex: 1 1 45%;
+        max-width: 45%;
+        margin: 7.5px;
+        box-sizing: border-box;
+        height: 30rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .ourTeam-cards .TeamMember1 .card:nth-child(4),
+    .ourTeam-cards .TeamMember1 .card:nth-child(5) {
+        flex: 1 1 45%; 
+        max-width: 45%;
+    }
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.8rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.4rem;
+    }
+    .bnr .title h1{
+        font-size: 1.8rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.4rem;
+    }
+    .bnr .description p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 627px) {
+    .bnr .title h1{
+        font-size: 1.7rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.3rem;
+    }
+    .bnr .description p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 621px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.7rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 603px) {
+    .bnr .title h1{
+        font-size: 1.6rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.3rem;
+    }
+    .bnr .description p{
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 596px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.6rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 577px) {
+    .bnr .title h1{
+        font-size: 1.5rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.2rem;
+    }
+    .bnr .description p{
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 571px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.5rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 553px) {
+    .bnr .title h1{
+        font-size: 1.4rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.2rem;
+    }
+    .bnr .description p{
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 546px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.4rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 527px) {
+    .bnr .title h1{
+        font-size: 1.3rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.1rem;
+    }
+    .bnr .description p{
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 521px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.3rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 503px) {
+    .ourTeam-cards .TeamMember1 .card{
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 7.5px;
+        box-sizing: border-box;
+        height: 30rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .ourTeam-cards .TeamMember1 .card:nth-child(4),
+    .ourTeam-cards .TeamMember1 .card:nth-child(5) {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.8rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.4rem;
+    }
+    .bnr .title h1{
+        font-size: 1.8rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.4rem;
+    }
+    .bnr .description p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 343px) {
+    .bnr .title h1{
+        font-size: 1.5rem;
+    }
+    .bnr .subtitle h3{
+        font-size: 1.2rem;
+    }
+    .bnr .description p{
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 340px) {
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.5rem;
+    }
+    .insideImage .TeamMember-Name h3{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 310px) {
+    .bnr .title h1{
+        font-size: 1.35rem;
+    }
+    .insideImage .TeamMember-Name h1{
+        font-size: 1.35rem;
+    }
+}
+@media (max-width: 722px) {
+    .ourTeam-header h1{
+        font-size: 3.5rem;
+    }
+    .ourTeam-header .normalH3{
+        font-size: 3.25rem;    
+    }
+}
+@media (max-width: 642px) {
+    .ourTeam-header h1{
+        font-size: 3rem;
+    }
+    .ourTeam-header .normalH3{
+        font-size: 2.75rem;    
+    }
+}
+@media (max-width: 563px) {
+    .ourTeam-header h1{
+        font-size: 2.5rem;
+    }
+    .ourTeam-header .normalH3{
+        font-size: 2.25rem;    
+    }
+}
+@media (max-width: 483px) {
+    .ourTeam-header h1{
+        font-size: 2rem;
+    }
+    .ourTeam-header .normalH3{
+        font-size: 1.75rem;    
+    }
+}
+@media (max-width: 403px) {
+    .ourTeam-header .ourTeam-Title{
+        font-size: 1.25rem;
+    }
+    .ourTeam-header h1{
+        font-size: 1.5rem;
+    }
+    .ourTeam-header .normalH3{
+        font-size: 1.25rem;    
+    }
+}

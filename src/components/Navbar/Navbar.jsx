@@ -50,11 +50,11 @@ const Navbar = () => {
           </div>
           <div className="navLinks">
               <ul>
-                  <li><a href='/#Home'>Home</a></li>
-                  <li><a href='/#Services'>Services</a></li>
-                  <li><a href='/#Calculator'>Calculator</a></li>
-                  <li><a href='/#About'>About</a></li>
-                  <li><a href='/#Contact'>Contact</a></li>
+                  <li><a href='/#Home' aria-label="Go to Home section">Home</a></li>
+                  <li><a href='/#Services'aria-label="View our Services section">Services</a></li>
+                  <li><a href='/#Calculator' aria-label="Access the Calculator section">Calculator</a></li>
+                  <li><a href='/#About' aria-label="Learn more About us">About</a></li>
+                  <li><a href='/#Contact' aria-label="Get in touch with us">Contact</a></li>
               </ul>
           </div>
           <div className='darkmode_toggele'>
@@ -67,7 +67,7 @@ const Navbar = () => {
             }
             {theme==='dark' && 
               <>
-                <svg id='darkmode-toggle' stroke="#f5f5f5" fill="none"  height="23" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="23" onClick={handelSunClick}>
+                <svg id='darkmode-toggle' stroke="#f5f5f5" fill="none"  height="23" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="23" onClick={handelSunClick}>
                   <circle cx="12" cy="12" r="5"/>
                   <line x1="12" x2="12" y1="1" y2="3"/>
                   <line x1="12" x2="12" y1="21" y2="23"/>
@@ -80,17 +80,17 @@ const Navbar = () => {
                 </svg>
               </>
             }
-            <svg id='openMenuSvg' onClick={handleOpenMenu} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg id='openMenuSvg' onClick={handleOpenMenu} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
           </div>
       </nav>
       <div className={`mobileNav ${activeMenu ? '' : 'closed-menu'}`}>
-        <span onClick={handleCloseMenu}><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        <span onClick={handleCloseMenu}><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
         <ul>
-          <li><a href='/#Home' onClick={handleCloseMenu}>Home</a></li>
-          <li><a href='/#Services' onClick={handleCloseMenu}>Services</a></li>
-          <li><a href='/#Calculator' onClick={handleCloseMenu}>Calculator</a></li>
-          <li><a href='/#About' onClick={handleCloseMenu}>About</a></li>
-          <li><a href='/#Contact' onClick={handleCloseMenu}>Contact</a></li>
+          <li><a href='/#Home' onClick={handleCloseMenu} aria-label="Go to Home section">Home</a></li>
+          <li><a href='/#Services' onClick={handleCloseMenu} aria-label="View our Services section">Services</a></li>
+          <li><a href='/#Calculator' onClick={handleCloseMenu} aria-label="Access the Calculator section">Calculator</a></li>
+          <li><a href='/#About' onClick={handleCloseMenu} aria-label="Learn more About us">About</a></li>
+          <li><a href='/#Contact' onClick={handleCloseMenu} aria-label="Get in touch with us">Contact</a></li>
         </ul>
       </div>
     </>

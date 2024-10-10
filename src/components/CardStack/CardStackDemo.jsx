@@ -14,7 +14,27 @@ export function CardStackDemo() {
 const CARDS = [
   {
     id: 0,
-    name: "Abdelilah Zaari ",
+    name: "Mourad Nachtane",
+    designation: "S4T CEO",
+    content: (
+      <p>
+        Mourad NACHTANE, <Highlight>PhD, CEO of Smart4Technologies</Highlight>, advances hydrogen systems with <Highlight>over 10 years</Highlight> in renewable energy.
+      </p>
+    ),
+  },
+  {
+    id: 1,
+    name: "Khaoula Adeli",
+    designation: "S4T Researcher",
+    content: (
+      <p>
+        Khaoula Adeli, <Highlight>researcher at Smart4Technologies</Highlight>, focuses on renewable energy and hydrogen production using <Highlight>AI solutions</Highlight>.
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    name: "Abdelilah Zaari",
     designation: "Software Developer and Project Manager",
     content: (
       <p>
@@ -24,8 +44,8 @@ const CARDS = [
     ),
   },
   {
-    id: 1,
-    name: "Abderrahmane Ait El Mouddene",
+    id: 3,
+    name: "Abd. Ait El Mouddene",
     designation: "Big Data and IoT Specialist",
     content: (
       <p>
@@ -35,12 +55,12 @@ const CARDS = [
     ),
   },
   {
-    id: 2,
+    id: 4,
     name: "Achraf El Makaoui",
     designation: "Frontend Developer",
     content: (
       <p>
-        Innovative <Highlight>Frontend developer</Highlight> with expertise in building interfaces.
+        <Highlight>Frontend developer</Highlight> with expertise in building interfaces.
         <Highlight>Licensed in Big Data</Highlight>, combining skills to deliver impactful solutions.
       </p>
     ),

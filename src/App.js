@@ -10,7 +10,7 @@ import FAQ from "./components/FAQ/Faq";
 import './App.css';
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Login from "./components/Login/Login";
+// import Login from "./components/Login/Login";
 import Sources from "./components/Sources/Sources";
 import Navbar from "./components/Navbar/Navbar";
 import Production from "./components/Production/Production";
@@ -24,19 +24,23 @@ import Scrolltotop from "./Scrolltotop";
 import TermOfUse from "./components/TermOfUse/TermOfUse";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import ScrollToSection from "./ScrollToSection";
+import OurTeam from "./components/OurTeam/OurTeam";
 
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
 
   useEffect(() => {
     const hasSeenIntro = localStorage.getItem('hasSeenIntro');
+
     if (hasSeenIntro) {
       setIntroComplete(true);
     } else {
-      setTimeout(() => {
+      const timeoutId = setTimeout(() => {
         setIntroComplete(true);
         localStorage.setItem('hasSeenIntro', 'true');
       }, 7000);
+
+      return () => clearTimeout(timeoutId);
     }
   }, []);
 
@@ -69,6 +73,10 @@ function App() {
             }
           />
           <Route
+            path="/OurTeam"
+            element={<><Scrolltotop/><ParticlesComponent/><Navbar/><OurTeam/><Footer/></>}
+          />
+          {/* <Route
             path="/signup"
             element={<Login/>}
           />
@@ -83,7 +91,7 @@ function App() {
           <Route
             path="/password_resett"
             element={<Login/>}
-          />
+          /> */}
           <Route
             path="/sources"
             element={<><Scrolltotop/><Navbar/><Sources/><Footer/></>}

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion, useTransform, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
 import './AnimatedTooltip.css';
+import { Link } from 'react-router-dom';
 
 export const AnimatedTooltip = ({ items }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -48,12 +49,14 @@ export const AnimatedTooltip = ({ items }) => {
             )}
           </AnimatePresence>
           <div className="image-container">
-            <img
-              onMouseMove={handleMouseMove}
-              src={item.image}
-              alt={item.name}
-              className="image"
-            />
+            <Link to={item.link}>
+              <img
+                onMouseMove={handleMouseMove}
+                src={item.image}
+                alt={item.name}
+                className="image"
+              />
+            </Link>
           </div>
         </div>
       ))}

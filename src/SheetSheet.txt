@@ -1,2 +1,0 @@
-https://ui.aceternity.com/components/animated-tooltip
-https://ui.aceternity.com/components/text-reveal-card

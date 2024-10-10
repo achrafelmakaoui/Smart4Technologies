@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 import ContactImg from '../Images/support.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -30,9 +30,13 @@ const Contact = () => {
                 setEmail('');  // Reset the email input
                 setMessage('');  // Reset the message input
                 setSuccAlert(true);
-                setTimeout(() => {
+                // Start a timeout to hide the success alert
+                const timeout = setTimeout(() => {
                     setSuccAlert(false);
                 }, 5000);
+                
+                // Clear the timeout if the component unmounts
+                return () => clearTimeout(timeout);
             })
             .catch((error) => {
                 console.error('Failed to send email:', error);
@@ -53,7 +57,7 @@ const Contact = () => {
                 <div className='Contact-Items'>
                     <div className='ContactImg'>
                         <div className='ContactImgBnner'>
-                            <img src={ContactImg} alt='cnt' />
+                            <img src={ContactImg} alt='contact'/>
                         </div>
                         <div className='ContactEmailBnner'>
                             <div className='CircleIconEmail'>
@@ -68,7 +72,7 @@ const Contact = () => {
                         </div>
                         <div className='ContactPhoneBnner'>
                             <div className='CircleIconPhone'>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#30ca59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#30ca59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
                                     <circle cx="4" cy="4" r="2"></circle>
@@ -76,7 +80,7 @@ const Contact = () => {
                             </div>
                             <div className='NbrPhone'>
                                 <h2>Linkedin</h2>
-                                <h4>+212 6 26 62 73 78</h4>
+                                <h4>smart4technologies (S4T)</h4>
                             </div>
                         </div>
                     </div>
@@ -84,18 +88,44 @@ const Contact = () => {
                         <h4>Feel free to reach out through our inbox 📬.<br/> We're all ears and eager to connect!</h4>
                         <form onSubmit={sendEmail}>
                             <div className='formName'>
-                                <label>First Name</label>
-                                <input type="text" placeholder='First Name...' value={name} onChange={(e) => setName(e.target.value)} required/>
+                                <label htmlFor='fullName'>Full Name</label>
+                                <input 
+                                    type="text" 
+                                    id='fullName' 
+                                    name='fullname'  // Keep 'name' as lowercase for consistency
+                                    placeholder='First Name...' 
+                                    value={name} 
+                                    onChange={(e) => setName(e.target.value)} 
+                                    required 
+                                    autoComplete="name"
+                                />
                                 <FontAwesomeIcon icon={faCircleUser} className='UserIcon' />
                             </div>
                             <div className='formEmail'>
-                                <label>Email Address</label>
-                                <input type="email" placeholder='Email Addres...' value={email} onChange={(e) => setEmail(e.target.value)} required/>
+                                <label htmlFor='emailAddress'>Email Address</label>
+                                <input 
+                                    type="email" 
+                                    id='emailAddress' 
+                                    name='email' 
+                                    placeholder='Email Address...' 
+                                    value={email} 
+                                    onChange={(e) => setEmail(e.target.value)} 
+                                    required 
+                                    autoComplete="email"
+                                />
                                 <FontAwesomeIcon icon={faEnvelopeOpen} className='Envolope' />
                             </div>
                             <div className='formMessage'>
-                                <label>Message</label>
-                                <textarea placeholder='Leave me a message...' value={message} onChange={(e) => setMessage(e.target.value)} required/>
+                                <label htmlFor='message'>Message</label>
+                                <textarea 
+                                    id='message' 
+                                    name='message' 
+                                    placeholder='Leave me a message...' 
+                                    value={message} 
+                                    onChange={(e) => setMessage(e.target.value)} 
+                                    required 
+                                    autoComplete="off"
+                                />
                                 <FontAwesomeIcon icon={faEnvelopeOpenText} className='EnvelopeText' />
                             </div>
                             <button type='submit'>

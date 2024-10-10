@@ -25,7 +25,6 @@ const HydroSolution = () => {
     };
   return (
     <div className='Hydrosolution-section'>
-        {/* <ParticlesComponent/> */}
         <div className='HydrosolutionContainer'>
             <div className='Hydrosolution-content'>
                 <h3>

@@ -42,14 +42,14 @@ const Services = () => {
           <AnimatedHeading text='Empower Your Energy Vision: Discover Our Hydrogen Expertise 🌍.'/>
         </h4>
         <div id="cards" ref={cardsRef}>
-          <div class="card">
-            <div class="card-content">
-              <div class="card-image">
+          <div className="card">
+            <div className="card-content">
+              <div className="card-image">
                 <img src={Hydrogen} alt='Hydrogen'/>
               </div>
-              <div class="card-info-wrapper">
-                <div class="card-info">
-                  <div class="card-info-title">
+              <div className="card-info-wrapper">
+                <div className="card-info">
+                  <div className="card-info-title">
                     <h3>Hydrogen Solutions</h3>  
                     <h4>Our cutting-edge H2chain software models the entire value chain for informed decision-making. Maximize storage potential with optimized tank design and safety enhancements.</h4>
                   </div>    
@@ -58,21 +58,21 @@ const Services = () => {
             </div>
             <div className='pro__items'>
               <Link to='/HydrogenSolutions'>Get Started
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </Link>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
-              <div class="card-image">
+          <div className="card">
+            <div className="card-content">
+              <div className="card-image">
                 <img src={Sol} alt='Engineering Solutions'/>
               </div>
-              <div class="card-info-wrapper">
-                <div class="card-info">
-                  <div class="card-info-title">
+              <div className="card-info-wrapper">
+                <div className="card-info">
+                  <div className="card-info-title">
                     <h3>Engineering Solutions</h3>  
                     <h4>Experienced engineers use CAD/CAM software for prototyping, visualization, and DFM. Expertise ranges from consumer goods to aerospace, ensuring products meet specific requirements.</h4>
                   </div>    
@@ -81,21 +81,21 @@ const Services = () => {
             </div>
             <div className='pro__items'>
               <Link to="/EngineeringSolutions">Get Started
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </Link>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
-              <div class="card-image">
+          <div className="card">
+            <div className="card-content">
+              <div className="card-image">
               <img src={Laptop} alt='IT Solutions'/>
               </div>
-              <div class="card-info-wrapper">
-                <div class="card-info">
-                  <div class="card-info-title">
+              <div className="card-info-wrapper">
+                <div className="card-info">
+                  <div className="card-info-title">
                     <h3>IT Solutions</h3>  
                     <h4>Unlock AI's power for predictive analytics, chatbots, process automation. Benefits: increased revenue, improved customer experience, reduced costs, enhanced operational efficiency.</h4>
                   </div>    
@@ -104,21 +104,21 @@ const Services = () => {
             </div>
             <div className='pro__items'>
               <Link to="/ITSolutions">Get Started
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </Link>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
-              <div class="card-image">
+          <div className="card">
+            <div className="card-content">
+              <div className="card-image">
                 <img src={Support} alt='Laptop'/>
               </div>
-              <div class="card-info-wrapper">
-                <div class="card-info">
-                  <div class="card-info-title">
+              <div className="card-info-wrapper">
+                <div className="card-info">
+                  <div className="card-info-title">
                     <h3>Support</h3>  
                     <h4>Our expert team provides technical assistance, training, and consulting, ensuring efficient operation and tailored solutions for diverse industries' specific needs.</h4>
                   </div>    
@@ -127,7 +127,7 @@ const Services = () => {
             </div>
             <div className='pro__items'>
               <a href="/#Contact">Get Started
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
