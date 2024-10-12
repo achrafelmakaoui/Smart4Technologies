@@ -20,6 +20,7 @@
   --radial_gf: rgba(0, 0, 0, 0.108);
   --radial_gs: rgba(0, 0, 0, 0.4);
   --colorN: black;
+  --cardstack_highlight:#18622D;
 }
 
 [data-theme='dark']{
@@ -44,4 +45,5 @@
   --radial_gf: rgba(255, 255, 255, 0.06);
   --radial_gs: rgba(255, 255, 255, 0.4);
   --colorN: white;
+  --cardstack_highlight:#30ca59;
 }

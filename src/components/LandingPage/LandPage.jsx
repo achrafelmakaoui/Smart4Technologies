@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './LandPage.css'
 import { gsap, Power2 } from 'gsap';
-import ParticlesComponent from './Particles';
 import { Link } from 'react-router-dom';
 
 const LandPage = () => {
@@ -31,36 +30,35 @@ const LandPage = () => {
             0.5,
             { yPercent: 130, opacity: 0, stagger: 0.02, ease: Power2.easeInOut },
             { yPercent: 0, opacity: 1, stagger: 0.02, ease: Power2.easeInOut },
-            '-=0.6'
+            '-=0.5'
         );
         tl.fromTo(
             iconsAnimation.current,
             0.5,
             { yPercent: 130, opacity: 0, stagger: 0.02, ease: Power2.easeInOut },
             { yPercent: 0, opacity: 1, stagger: 0.02, ease: Power2.easeInOut },
-            '-=0.4'
+            '-=0.5'
         );
         tl.fromTo(
             iconsAnimation2.current,
             0.5,
             { yPercent: 130, opacity: 0, stagger: 0.02, ease: Power2.easeInOut },
             { yPercent: 0, opacity: 1, stagger: 0.02, ease: Power2.easeInOut },
-            '-=0.4'
+            '-=0.5'
         );
-        tl.fromTo(ImgAnimation.current, 0.5, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut }, '-=0.5');
-        tl.fromTo(Img2Animation.current, 0.6, { opacity: 0, y:60 }, { opacity: 1, y:0, ease: Power2.easeInOut }, '-=0.0');
+        tl.fromTo(ImgAnimation.current, 1, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut }, '-=1.6');
+        tl.fromTo(Img2Animation.current, 1, { opacity: 0, y:60 }, { opacity: 1, y:0, ease: Power2.easeInOut }, '-=1.6');
     }, []);
 
   return (
     <section className="home" id="Home">
-        <ParticlesComponent/>
         <div className='container'>
             <div className='hero-main'>
                 <div className='hero-text'>
                     <h1 ref={TextAnimation}>Optimize Hydrogen Systems</h1>
                     <p ref={paraghAnimation}>Smart4Technologies delivers cutting-edge software for planning, modeling, and enhancing hydrogen system value chains globally. Utilizing reliable data from diverse energy inputs and renewable sources, our solution is tailored for academic experts, consultants, business strategists, project developers, and engineers.</p>
                     <span ref={iconsAnimation}>
-                        <Link to='/signin'>Get started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></Link>
+                        <Link>Get started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></Link>
                         <Link>See Demo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></Link>
                     </span>
                     <div className='hero-analis' ref={iconsAnimation2}>

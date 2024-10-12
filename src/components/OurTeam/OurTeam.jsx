@@ -26,7 +26,7 @@ const OurTeam = () => {
                 <div className='TeamMember1'>
                     <div className='card'>
                         <div className='card-image'>
-                            <img src={TeamMember1} alt='Mourad Nachtane'/>
+                            <img src={TeamMember1} alt='Mourad Nachtane' loading="lazy" title="Smart4Technologies Team"/>
                         </div>
                         <div className='insideImage'>
                             <div className='LinkeedInIcon'>
@@ -52,7 +52,7 @@ const OurTeam = () => {
                     </div>
                     <div className='card'>
                         <div className='card-image'>
-                            <img src={TeamMember2} alt='Khaoula Adeli'/>
+                            <img src={TeamMember2} alt='Khaoula Adeli' loading="lazy" title="Smart4Technologies Team"/>
                         </div>
                         <div className='insideImage'>
                             <div className='LinkeedInIcon'>
@@ -78,7 +78,7 @@ const OurTeam = () => {
                     </div>
                     <div className='card'>
                         <div className='card-image'>
-                            <img src={TeamMember3} alt='Abdelilah Zaari'/>
+                            <img src={TeamMember3} alt='Abdelilah Zaari' loading="lazy" title="Smart4Technologies Team"/>
                         </div>
                         <div className='insideImage'>
                             <div className='LinkeedInIcon'>
@@ -104,7 +104,7 @@ const OurTeam = () => {
                     </div>
                     <div className='card'>
                         <div className='card-image'>
-                            <img src={TeamMember4} alt='Abd. Ait El Mouddene'/>
+                            <img src={TeamMember4} alt='Abd. Ait El Mouddene' loading="lazy" title="Smart4Technologies Team"/>
                         </div>
                         <div className='insideImage'>
                             <div className='LinkeedInIcon'>
@@ -130,7 +130,7 @@ const OurTeam = () => {
                     </div>
                     <div className='card'>
                         <div className='card-image'>
-                            <img src={TeamMember5} alt='Achraf El Makaoui'/>
+                            <img src={TeamMember5} alt='Achraf El Makaoui' loading="lazy" title="Smart4Technologies Team"/>
                         </div>
                         <div className='insideImage'>
                             <div className='LinkeedInIcon'>

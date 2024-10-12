@@ -9,7 +9,7 @@ export function ForgetPwd() {
   };
   return (
     <div className="forgetpwd-container">
-      <img className="forgetpwd-img" src={signUpLogo} alt="signUpLogo"/>
+      <img className="forgetpwd-img" src={signUpLogo} alt="signUpLogo" loading="lazy" title="SignUp Logo"/>
       <h2 className="forgetpwd-title">Reset your password</h2>
       <form className="forgetpwd-form" onSubmit={handleSubmit}>
         <p className="forgetpwd-subtitle">

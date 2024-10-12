@@ -78,15 +78,13 @@
   /* Highlight.css */
 .highlight {
     font-weight: bold;
-    background-color: #d1fae5; /* emerald-100 */
-    color: #30ca59; /* emerald-700 */
+    color: var(--cardstack_highlight); /* emerald-700 */
     padding: 0.125rem 0.25rem; /* px-1 py-0.5 */
     font-size: 1.3rem;
 
   }
   
   .highlight-dark {
-    background-color: rgba(4, 120, 87, 0.2); /* emerald-700/[0.2] */
     font-size: 1.3rem;
     color: #30ca59; /* emerald-500 */
   }

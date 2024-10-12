@@ -35,17 +35,17 @@ const Services = () => {
   return (
     <section className='fcards' id='Services'>
       <div className='fcards-service-conttent'>
-        <h3 className='fcardsh3'>
+        <h2 className='fcardsh2'>
           <AnimatedHeading text='Our Services'/>
-        </h3>
-        <h4 className='fcardsh4'>
+        </h2>
+        <h3 className='fcardsh3'>
           <AnimatedHeading text='Empower Your Energy Vision: Discover Our Hydrogen Expertise 🌍.'/>
-        </h4>
+        </h3>
         <div id="cards" ref={cardsRef}>
           <div className="card">
             <div className="card-content">
               <div className="card-image">
-                <img src={Hydrogen} alt='Hydrogen'/>
+                <img src={Hydrogen} alt='Hydrogen' loading="lazy" title="Smart4Technologies Hydrogen Solutions"/>
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
@@ -68,7 +68,7 @@ const Services = () => {
           <div className="card">
             <div className="card-content">
               <div className="card-image">
-                <img src={Sol} alt='Engineering Solutions'/>
+                <img src={Sol} alt='Engineering Solutions' loading="lazy" title="Smart4Technologies Engineering Solutions"/>
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
@@ -91,7 +91,7 @@ const Services = () => {
           <div className="card">
             <div className="card-content">
               <div className="card-image">
-              <img src={Laptop} alt='IT Solutions'/>
+              <img src={Laptop} alt='IT Solutions' loading="lazy" title="Smart4Technologies IT Solutions"/>
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
@@ -114,7 +114,7 @@ const Services = () => {
           <div className="card">
             <div className="card-content">
               <div className="card-image">
-                <img src={Support} alt='Laptop'/>
+                <img src={Support} alt='Laptop' loading="lazy" title="Smart4Technologies Support"/>
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">

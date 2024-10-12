@@ -11,12 +11,10 @@ import B1 from '../Images/B1.png'
 import B2 from '../Images/B2.png'
 import B3 from '../Images/B3.png'
 import GreenH2 from '../Images/GreenH2.jpg'
-import ParticlesComponent from '../LandingPage/Particles';
 
 const Sources = () => {
   return (
     <div className='sources-section'>
-        <ParticlesComponent/>
         <div className='sourcesContainer'>
             <div className='sources-content'>
                 <h3>
@@ -28,7 +26,7 @@ const Sources = () => {
             </div>
             <div className='sources-contentheader'>
                 <div className='sources-imgFt'>
-                    <img src={GrH2} className="GrH2" alt='sources'/>
+                    <img src={GrH2} className="GrH2" alt='sources' loading="lazy" title="Grey Hydrogen"/>
                 </div>
                 <div className='sources-textFt'>
                     <h1><AnimatedHeading text='Grey'/></h1>
@@ -40,13 +38,13 @@ const Sources = () => {
                     <p>The term "grey hydrogen" refers to hydrogen produced from conventional methods such as steam methane reforming, without carbon capture and storage (CCS). When methane is used as the feedstock for hydrogen production through steam reforming, the process generates hydrogen and CO2. If the emitted CO2 is not captured and stored, the produced hydrogen is termed "grey hydrogen." This term is used to distinguish this type of hydrogen from more environmentally friendly variants, such as "blue" hydrogen (where CO2 is captured and stored) and "green" hydrogen (produced by electrolysis of water using renewable electricity). Grey hydrogen widely used in many industrial sectors, but it is increasingly subject to regulatory and social pressures to reduce the CO2 emissions associated with its production. This is driving the development of CO2 capture and storage technologies as well as the transition to more environmentally friendly hydrogen production methods.</p>
                 </div>
                 <div className='sources-imgFt2'>
-                    <img src={GrDef} className="GrDef" alt='sources'/>
+                    <img src={GrDef} className="GrDef" alt='sources' loading="lazy" title="Grey Hydrogen"/>
                 </div>
             </div>
             <h3 className='sectionMethods'>Let's dive into the key hydrogen production methods:</h3>
             <div className='sources-content2'>
                 <div className='sources-imgFt3'>
-                    <img src={Method1} className="Method1" alt='sources'/>
+                    <img src={Method1} className="Method1" alt='sources' loading="lazy" title="Steam reforming"/>
                 </div>
                 <div className='sources-textFt2'>
                     <p>Steam reforming: A chemical process where methane (CH4) is combined with steam (H2O) at high temperature and pressure, catalyzed by a reforming catalyst, to produce hydrogen (H2) and carbon monoxide (CO). It is the most commonly used method for industrial hydrogen production.</p>
@@ -54,7 +52,7 @@ const Sources = () => {
             </div>
             <div className='sources-content2'>
                 <div className='sources-imgFt4'>
-                    <img src={Method2} className="Method2" alt='sources'/>
+                    <img src={Method2} className="Method2" alt='sources' loading="lazy" title="Partial oxidation"/>
                 </div>
                 <div className='sources-textFt2'>
                     <p>Partial oxidation: This process involves the incomplete combustion of a hydrocarbon fuel, such as methane or coal, in the presence of a limited amount of oxygen. It produces hydrogen, carbon monoxide, and heat.</p>
@@ -62,7 +60,7 @@ const Sources = () => {
             </div>
             <div className='sources-content2'>
                 <div className='sources-imgFt5'>
-                    <img src={Method3} className="Method3" alt='sources'/>
+                    <img src={Method3} className="Method3" alt='sources' loading="lazy" title="Gasification"/>
                 </div>
                 <div className='sources-textFt2'>
                     <p>Gasification: This is the process of converting biomass, coal, or other organic materials into a synthesis gas primarily composed of hydrogen (H2), carbon monoxide (CO), and carbon dioxide (CO2), using steam and oxygen or air.</p>
@@ -108,13 +106,13 @@ const Sources = () => {
                     <p>The concept of "blue hydrogen" refers to hydrogen produced from traditional methods such as steam methane reforming, partial oxidation, or gasification, but with the capture and storage of CO2 (CCS - Carbon Capture and Storage). When methane is used to produce hydrogen through steam reforming, it generates both hydrogen and CO2. However, in the context of "blue hydrogen," the emitted CO2 is captured and safely stored rather than being released into the atmosphere. Hydrogen capture refers to the process of separating hydrogen from a gas mixture in order to concentrate and purify it. This technology is employed in various contexts, including hydrogen production from primary sources such as natural gas or biomass, as well as in hydrogen recycling in applications such as oil refining or chemical production.</p>
                 </div>
                 <div className='sources-imgFt2'>
-                    <img src={BlH2} className="BlH2" alt='sources'/>
+                    <img src={BlH2} className="BlH2" alt='sources' loading="lazy" title="Blue Hydrogen"/>
                 </div>
             </div>
             <h3 className='sectionMethods'>Cool hydrogen capture methods:</h3>
             <div className='sources-content2'>
                 <div className='sources-imgFt3'>
-                    <img src={B1} className="Method1" alt='sources'/>
+                    <img src={B1} className="Method1" alt='sources' loading="lazy" title="Adsorption"/>
                 </div>
                 <div className='sources-textFt2'>
                     <p>Adsorption: Hydrogen is adsorbed onto a solid surface, such as activated carbon or polymer materials, and then desorbed using pressure or temperature changes.</p>
@@ -122,7 +120,7 @@ const Sources = () => {
             </div>
             <div className='sources-content2'>
                 <div className='sources-imgFt4'>
-                    <img src={B2} className="Method2" alt='sources'/>
+                    <img src={B2} className="Method2" alt='sources' loading="lazy" title="Selective compression"/>
                 </div>
                 <div className='sources-textFt2'>
                     <p>Selective compression: Hydrogen is compressed at high pressures to separate it from other gases.</p>
@@ -130,7 +128,7 @@ const Sources = () => {
             </div>
             <div className='sources-content2'>
                 <div className='sources-imgFt5'>
-                    <img src={B3} className="Method3" alt='sources'/>
+                    <img src={B3} className="Method3" alt='sources' loading="lazy" title="Membrane permeation"/>
                 </div>
                 <div className='sources-textFt2'>
                     <p>Membrane permeation: Selective membranes allow the selective passage of hydrogen through them, thereby separating hydrogen from other gases present.</p>
@@ -146,7 +144,7 @@ const Sources = () => {
                     <p>Green hydrogen, created through water electrolysis powered by renewable energy sources such as solar, wind, hydro, and tidal, is pivotal to the transition towards a low-carbon economy. This process, which produces hydrogen and oxygen without emitting CO2, stands out from grey and blue hydrogen, which rely on fossil fuels and contribute to greenhouse gas emissions. Green hydrogen is increasingly seen as essential for various clean energy applications, including energy storage, hydrogen vehicles, and sustainable industrial processes, playing a critical role in reducing global greenhouse gas emissions and advancing environmental sustainability. Countries like Morocco are investing in green hydrogen, ammonia, and methanol industries to lead the global green energy market. These efforts promote innovation, job creation, and sustainable economic growth, while advancing climate change mitigation and ensuring a cleaner, resilient global economy.</p>
                 </div>
                 <div className='sources-imgFt2'>
-                    <img src={GreenH2} className="GreenH2" alt='sources'/>
+                    <img src={GreenH2} className="GreenH2" alt='sources' loading="lazy" title="Green Hydrogen"/>
                 </div>
             </div>
             <table className='greyHydro-table' style={{marginTop:'5rem'}} border={1} >

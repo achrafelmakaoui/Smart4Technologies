@@ -59,19 +59,18 @@ const FaqAccordion = () => {
                         
                         {theme==='light' &&
                             <>
-                                <img src={ChevronDownW} alt="icon-down" className="icon-plus" style={{ display: openFaq === index ? 'inline-block' : 'none' }} />
-                                <img src={ChevronUpW} alt="icon-up" className="icon-minus" style={{ display: openFaq === index ? 'none' : 'inline-block' }} />
+                                <img src={ChevronDownW} alt="icon-down" loading="lazy" title="Icon" className="icon-plus" style={{ display: openFaq === index ? 'inline-block' : 'none' }} />
+                                <img src={ChevronUpW} alt="icon-up" loading="lazy" title="Icon" className="icon-minus" style={{ display: openFaq === index ? 'none' : 'inline-block' }} />
                             </>
                         }
                         {theme==='dark' &&
                             <>
-                                <img src={ChevronDownB} alt="icon-down" className="icon-plus" style={{ display: openFaq === index ? 'inline-block' : 'none' }} />
-                                <img src={ChevronUpB} alt="icon-up" className="icon-minus" style={{ display: openFaq === index ? 'none' : 'inline-block' }} />
+                                <img src={ChevronDownB} alt="icon-down" loading="lazy" title="Icon" className="icon-plus" style={{ display: openFaq === index ? 'inline-block' : 'none' }} />
+                                <img src={ChevronUpB} alt="icon-up" loading="lazy" title="Icon" className="icon-minus" style={{ display: openFaq === index ? 'none' : 'inline-block' }} />
                             </>
                         }
                     </h2>
                     <p className={openFaq === index ? 'open' : ''}>{item.answer}</p>
-                    {/* <p style={{ display: openFaq === index ? 'block' : 'none'}}>{item.answer}</p> */}
                     <hr />
                 </div>
             ))}

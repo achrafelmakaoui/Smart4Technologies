@@ -45,7 +45,7 @@ const Calculator = () => {
           <div className="cardCalculator">
             <div className="cardCalculator-content">
               <div className="cardCalculator-image">
-                <img src={Sources} alt='Sources'/>
+                <img src={Sources} alt='Sources' loading="lazy" title="Hydrogen Sources"/>
               </div>
               <div className="cardCalculator-info-wrapper">
                 <div className="cardCalculator-info">
@@ -67,7 +67,7 @@ const Calculator = () => {
           <div className="cardCalculator">
             <div className="cardCalculator-content">
               <div className="cardCalculator-image">
-                <img src={Production} alt='Production'/>
+                <img src={Production} alt='Production' loading="lazy" title="Hydrogen Production"/>
               </div>
               <div className="cardCalculator-info-wrapper">
                 <div className="cardCalculator-info">
@@ -89,7 +89,7 @@ const Calculator = () => {
           <div className="cardCalculator">
             <div className="cardCalculator-content">
               <div className="cardCalculator-image">
-                <img src={Storage} alt='Storage'/>
+                <img src={Storage} alt='Storage' loading="lazy" title="Hydrogen Storage"/>
               </div>
               <div className="cardCalculator-info-wrapper">
                 <div className="cardCalculator-info">
@@ -111,7 +111,7 @@ const Calculator = () => {
           <div className="cardCalculator">
             <div className="cardCalculator-content">
               <div className="cardCalculator-image">
-                <img src={Application} alt='Application'/>
+                <img src={Application} alt='Application' loading="lazy" title="Hydrogen Application"/>
               </div>
               <div className="cardCalculator-info-wrapper">
                 <div className="cardCalculator-info">
@@ -131,7 +131,7 @@ const Calculator = () => {
             </div>
           </div>
         </div>
-        <Link to="/signin" className='btnGetStartedA'><span className='btnGetStarted'>Get Started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span></Link>
+        <Link className='btnGetStartedA'><span className='btnGetStarted'>Get Started <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span></Link>
       </div>
     </section>
   )

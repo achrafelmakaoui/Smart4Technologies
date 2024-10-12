@@ -45,13 +45,13 @@ const HydroSolution = () => {
             <div className='HydroServ-Item1'>
                 <div className='HydroServ-Col1'>
                     <div className={`HydroServ-Col1Img1 ${activeClass === 0 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol1} className='HydroSol1' alt='HydroSol1'/>
+                        <img src={HydroSol1} className='HydroSol1' alt='HydroSol1' loading="lazy" title="Smart4Technologies Research & Development (R&D)"/>
                     </div>
                     <div className={`HydroServ-Col1Img2 ${activeClass === 1 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol2} className='HydroSol2' alt='HydroSol2'/>
+                        <img src={HydroSol2} className='HydroSol2' alt='HydroSol2' loading="lazy" title="Smart4Technologies Research & Development (R&D)"/>
                     </div>
                     <div className={`HydroServ-Col1Img3 ${activeClass === 2 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol3} className='HydroSol3' alt='HydroSol3'/>
+                        <img src={HydroSol3} className='HydroSol3' alt='HydroSol3' loading="lazy" title="Smart4Technologies Research & Development (R&D)"/>
                     </div>
                 </div>
                 <div className='HydroServ-Col2'>
@@ -76,13 +76,13 @@ const HydroSolution = () => {
             <div className='HydroServ-Item1'>
                 <div className='HydroServ-Col1'>
                     <div className={`HydroServ-Col1Img1 ${activeClass === 3 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol4} className='HydroSol1' alt='HydroSol4'/>
+                        <img src={HydroSol4} className='HydroSol1' alt='HydroSol4' loading="lazy" title="Smart4Technologies H2chain software"/>
                     </div>
                     <div className={`HydroServ-Col1Img2 ${activeClass === 4 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol5} className='HydroSol2' alt='HydroSol5'/>
+                        <img src={HydroSol5} className='HydroSol2' alt='HydroSol5' loading="lazy" title="Smart4Technologies H2chain software"/>
                     </div>
                     <div className={`HydroServ-Col1Img3 ${activeClass === 5 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol6} className='HydroSol3' alt='HydroSol6'/>
+                        <img src={HydroSol6} className='HydroSol3' alt='HydroSol6' loading="lazy" title="Smart4Technologies H2chain software"/>
                     </div>
                 </div>
                 <div className='HydroServ-Col2'>
@@ -111,13 +111,13 @@ const HydroSolution = () => {
             <div className='HydroServ-Item1'>
                 <div className='HydroServ-Col1'>
                     <div className={`HydroServ-Col1Img1 ${activeClass === 6 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol7} className='HydroSol1' alt='HydroSol4'/>
+                        <img src={HydroSol7} className='HydroSol1' alt='HydroSol4' loading="lazy" title="Smart4Technologies Hydrogen tank design & efficiency"/>
                     </div>
                     <div className={`HydroServ-Col1Img2 ${activeClass === 7 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol8} className='HydroSol2' alt='HydroSol5'/>
+                        <img src={HydroSol8} className='HydroSol2' alt='HydroSol5' loading="lazy" title="Smart4Technologies Hydrogen tank design & efficiency"/>
                     </div>
                     <div className={`HydroServ-Col1Img3 ${activeClass === 8 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol9} className='HydroSol3' alt='HydroSol6'/>
+                        <img src={HydroSol9} className='HydroSol3' alt='HydroSol6' loading="lazy" title="Smart4Technologies Hydrogen tank design & efficiency"/>
                     </div>
                 </div>
                 <div className='HydroServ-Col2'>
@@ -146,13 +146,13 @@ const HydroSolution = () => {
             <div className='HydroServ-Item1'>
                 <div className='HydroServ-Col1'>
                     <div className={`HydroServ-Col1Img1 ${activeClass === 9 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol10} className='HydroSol1' alt='HydroSol4'/>
+                        <img src={HydroSol10} className='HydroSol1' alt='HydroSol4' loading="lazy" title="Smart4Technologies Partnerships & Collaborations"/>
                     </div>
                     <div className={`HydroServ-Col1Img3 ${activeClass === 10 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol11} className='HydroSol2' alt='HydroSol5'/>
+                        <img src={HydroSol11} className='HydroSol2' alt='HydroSol5' loading="lazy" title="Smart4Technologies Partnerships & Collaborations"/>
                     </div>
                     <div className={`HydroServ-Col1Img3 ${activeClass === 11 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol12} className='HydroSol3' alt='HydroSol6'/>
+                        <img src={HydroSol12} className='HydroSol3' alt='HydroSol6' loading="lazy" title="Smart4Technologies Partnerships & Collaborations"/>
                     </div>
                 </div>
                 <div className='HydroServ-Col2'>
@@ -181,13 +181,13 @@ const HydroSolution = () => {
             <div className='HydroServ-Item1'>
                 <div className='HydroServ-Col1'>
                     <div className={`HydroServ-Col1Img1 ${activeClass === 12 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol13} className='HydroSol1' alt='HydroSol4'/>
+                        <img src={HydroSol13} className='HydroSol1' alt='HydroSol4' loading="lazy" title="Smart4Technologies Training & Education"/>
                     </div>
                     <div className={`HydroServ-Col1Img2 ${activeClass === 13 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol14} className='HydroSol2' alt='HydroSol5'/>
+                        <img src={HydroSol14} className='HydroSol2' alt='HydroSol5' loading="lazy" title="Smart4Technologies Training & Education"/>
                     </div>
                     <div className={`HydroServ-Col1Img3 ${activeClass === 14 ? 'expanded' : 'collapsed'}`}>
-                        <img src={HydroSol15} className='HydroSol3' alt='HydroSol6'/>
+                        <img src={HydroSol15} className='HydroSol3' alt='HydroSol6' loading="lazy" title="Smart4Technologies Training & Education"/>
                     </div>
                 </div>
                 <div className='HydroServ-Col2'>

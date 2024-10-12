@@ -26,16 +26,15 @@ const Contact = () => {
             .then((response) => {
                 console.log('Email sent successfully!', response.status, response.text);
                 e.target.reset();
-                setName('');  // Reset the name input
-                setEmail('');  // Reset the email input
-                setMessage('');  // Reset the message input
+                setName('');
+                setEmail('');
+                setMessage('');
                 setSuccAlert(true);
-                // Start a timeout to hide the success alert
+                
                 const timeout = setTimeout(() => {
                     setSuccAlert(false);
                 }, 5000);
                 
-                // Clear the timeout if the component unmounts
                 return () => clearTimeout(timeout);
             })
             .catch((error) => {
@@ -57,7 +56,7 @@ const Contact = () => {
                 <div className='Contact-Items'>
                     <div className='ContactImg'>
                         <div className='ContactImgBnner'>
-                            <img src={ContactImg} alt='contact'/>
+                            <img src={ContactImg} alt='contact' loading="lazy" title="Smart4Technologies Support"/>
                         </div>
                         <div className='ContactEmailBnner'>
                             <div className='CircleIconEmail'>
@@ -67,7 +66,7 @@ const Contact = () => {
                             </div>
                             <div className='LnkEmail'>
                                 <h2>Email</h2>
-                                <h4>Support@smart4technologies.com</h4>
+                                <h3>Support@smart4technologies.com</h3>
                             </div>
                         </div>
                         <div className='ContactPhoneBnner'>
@@ -80,19 +79,19 @@ const Contact = () => {
                             </div>
                             <div className='NbrPhone'>
                                 <h2>Linkedin</h2>
-                                <h4>smart4technologies (S4T)</h4>
+                                <h3>smart4technologies (S4T)</h3>
                             </div>
                         </div>
                     </div>
                     <div className='ContactForm'>
-                        <h4>Feel free to reach out through our inbox 📬.<br/> We're all ears and eager to connect!</h4>
+                        <span>Feel free to reach out through our inbox 📬.<br/> We're all ears and eager to connect!</span>
                         <form onSubmit={sendEmail}>
                             <div className='formName'>
                                 <label htmlFor='fullName'>Full Name</label>
                                 <input 
                                     type="text" 
                                     id='fullName' 
-                                    name='fullname'  // Keep 'name' as lowercase for consistency
+                                    name='fullname'
                                     placeholder='First Name...' 
                                     value={name} 
                                     onChange={(e) => setName(e.target.value)} 

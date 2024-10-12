@@ -39,12 +39,12 @@ const Navbar = () => {
         <div className="navLogo">
             {theme==='light' &&
               <>
-                <Link to='/' onClick={handleImageClick}><img src={AdbLogo} alt="text"/></Link>
+                <Link to='/' onClick={handleImageClick}><img src={AdbLogo} alt="text" loading="lazy" title="Smart4Technologies Logo"/></Link>
               </>
             }
             {theme==='dark' &&
               <>
-                <Link to='/' onClick={handleImageClick}><img src={AdbWLogo} alt="text"/></Link>
+                <Link to='/' onClick={handleImageClick}><img src={AdbWLogo} alt="text" loading="lazy" title="Smart4Technologies Logo"/></Link>
               </>
             }
           </div>

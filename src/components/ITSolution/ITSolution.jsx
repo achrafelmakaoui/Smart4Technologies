@@ -43,19 +43,19 @@ const ITSolution = () => {
                     </div>
                     <div className='ITServ-v2'>
                         <div className={`ITServ-Col1Img1 ${activeClass === 0 ? 'expanded' : 'collapsed'}`}>
-                            <img src={ITSol1} className='HydroSol1' alt='ITSol'/>
+                            <img src={ITSol1} className='HydroSol1' alt='ITSol' loading="lazy" title="Smart4Technologies AI & Machine Learning Applications"/>
                         </div>
                         <div className={`ITServ-Col1Img2 ${activeClass === 1 ? 'expanded' : 'collapsed'}`}>
-                            <img src={ITSol2} className='HydroSol2' alt='ITSol'/>
+                            <img src={ITSol2} className='HydroSol2' alt='ITSol' loading="lazy" title="Smart4Technologies AI & Machine Learning Applications"/>
                         </div>
                         <div className={`ITServ-Col1Img3 ${activeClass === 2 ? 'expanded' : 'collapsed'}`}>
-                            <img src={ITSol3} className='HydroSol3' alt='ITSol'/>
+                            <img src={ITSol3} className='HydroSol3' alt='ITSol' loading="lazy" title="Smart4Technologies AI & Machine Learning Applications"/>
                         </div>
                         <div className={`ITServ-Col1Img4 ${activeClass === 3 ? 'expanded' : 'collapsed'}`}>
-                            <img src={ITSol4} className='HydroSol3' alt='ITSol'/>
+                            <img src={ITSol4} className='HydroSol3' alt='ITSol' loading="lazy" title="Smart4Technologies AI & Machine Learning Applications"/>
                         </div>
                         <div className={`ITServ-Col1Img5 ${activeClass === 4 ? 'expanded' : 'collapsed'}`}>
-                            <img src={ITSol5} className='HydroSol3' alt='ITSol'/>
+                            <img src={ITSol5} className='HydroSol3' alt='ITSol' loading="lazy" title="Smart4Technologies AI & Machine Learning Applications"/>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ export function ResetPwd() {
   }
   return (
     <div className="resetPwd-container">
-      <img className="resetPwd-img" src={signUpLogo} alt="signUpLogo"/>
+      <img className="resetPwd-img" src={signUpLogo} alt="signUpLogo" loading="lazy" title="SignUp Logo"/>
       <h2 className="resetPwd-title">Reset your password</h2>
       <form className="resetPwd-form" onSubmit={handleSubmit}>
         <p className="resetPwd-subtitle">

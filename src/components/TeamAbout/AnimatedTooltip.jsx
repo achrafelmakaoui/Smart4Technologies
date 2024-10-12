@@ -55,6 +55,8 @@ export const AnimatedTooltip = ({ items }) => {
                 src={item.image}
                 alt={item.name}
                 className="image"
+                loading="lazy"
+                title="Team"
               />
             </Link>
           </div>

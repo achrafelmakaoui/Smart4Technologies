@@ -26,10 +26,10 @@ const AboutPage = () => {
                     </p>
                 </div>
                 <div className="img-side">
-                    <img src={H2} alt="emoji" className="work-emoji"/>
-                    <img src={Developer} className="img-side__main-img" alt="about"/>
+                    <img src={H2} alt="emoji" className="work-emoji" loading="lazy" title="Hydrogen Icon"/>
+                    <img src={Developer} className="img-side__main-img" alt="about" loading="lazy" title="Hydrogeen Thank"/>
                     <span className="circleHydro">
-                        <img src={About} alt="emoji"/>
+                        <img src={About} alt="emoji" loading="lazy" title="About Our Hydrogen Solutions"/>
                     </span>
                 </div>
             </div>

@@ -8,14 +8,14 @@
     padding: 120px 4rem 25px 4rem;
     max-width: 107rem;
 }
-.fcardsh3{
+.fcardsh2{
     color: #30ca59;
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
-.fcardsh4{
+.fcardsh3{
     color: var(--color);
     font-family: Poppins,sans-serif;
     font-size: 2.5rem;
@@ -196,7 +196,7 @@
   .card {
     width: 49%;
   }
-  .fcardsh4{
+  .fcardsh3{
     font-size: 2rem;
   }
 }
@@ -253,32 +253,32 @@
   }
 }
 @media(max-width: 571px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 2.25rem;
   }
 }
 @media(max-width: 532px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 2rem;
   }
 }
 @media(max-width: 472px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 1.75rem;
   }
 }
 @media(max-width: 422px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 1.5rem;
   }
 }
 @media(max-width: 374px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 1.25rem;
   }
 }
 @media(max-width: 366px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 1rem;
   }
   .card-info-title > h4 {
@@ -291,7 +291,7 @@
   }
 }
 @media(max-width: 328px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 1rem;
   }
   .card-info-title > h3 {
@@ -307,7 +307,7 @@
   }
 }
 @media(max-width: 334px) {
-  .fcardsh4{
+  .fcardsh3{
     font-size: 1rem;
   }
 }
